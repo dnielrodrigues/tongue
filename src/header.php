@@ -11,6 +11,8 @@
         <script src="http://www.sinteronibus.com.br/wp-content/themes/sinteronibus/js/html5shiv.js"></script>
     <![endif]-->
 
+    <!-- TESTE PARA O GIT HUB -->
+
     <!-- SEO -->
         <meta name="description" content="Descrição"/>
         <link rel="canonical" href="http://www.exemplo.com.br/" />
