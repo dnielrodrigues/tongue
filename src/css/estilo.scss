@@ -1,0 +1,39 @@
+/* TEMPORARIOS */
+.entrar{top: 50%; left: 50%; position: absolute; margin: -17px 0 0 -32px; }
+
+// MENU GERAL
+.menu-pri{display: none;}
+
+// TOPO
+.top-bar{background:#666;height: 60px;}
+.top-bar .b-menu-pri{@extend .i-medium;@extend .icon-list2;padding: 5px 5px 0;display: block;float: left;}
+.tit-page{float: left; position: absolute; left: 15%; top: 9px; color: #fff;}
+.top-bar .icon-plus2{@extend .i-medium;float:right;}
+
+
+// LISTAR DECKS
+.deck-item,.deck-item-open{margin: 0;padding: 0; border-bottom: 1px solid #eee;}
+.l-deck{width: 85%;display: block;padding: 0;height: 60px;float: left;
+    &:hover{background:#f6f6f6;}
+}
+.tit-deck{display: block; margin: 8px 0 3px 0;}
+.info-small{font-size:0.6em;}
+.more-options{height: 0;overflow:hidden;}
+
+.deck-list .icon-docs{float: left; font-size: 2em; padding: 12px; color: #eee;}
+.deck-list .icon-ellipsis{@extend .i-medium;font-size: 2.5em; color: #ccc; background: #f8f8f8;overflow:hidden;}
+.deck-list .icon-arrow-up6{@extend .i-medium;height: 0;overflow:hidden;font-size: 2.5em; color: #ccc; background: #f8f8f8;}
+
+// MENU DO DECK
+.deck-item-open{}
+.deck-item-open .icon-ellipsis{}
+.deck-item-open .icon-arrow-up6{}
+
+
+
+
+
+
+
+
+

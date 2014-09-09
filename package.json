@@ -1,0 +1,29 @@
+{
+  "name": "Luz.vc",
+  "version": "0.0.0",
+  "description": "Project for test in a job for Luz.vc store",
+  "main": "Grunt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "grunt",
+    "sass",
+    "js"
+  ],
+  "author": "Daniel Rodrigues",
+  "license": "WTFPL",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-htmlmin": "^0.3.0",
+    "grunt-contrib-sass": "^0.7.3",
+    "grunt-contrib-uglify": "^0.5.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-html-minify": "^0.3.1"
+  },
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-uglify": "^0.5.0"
+  }
+}
