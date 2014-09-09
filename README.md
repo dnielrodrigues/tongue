@@ -1,7 +1,7 @@
-luz.vc
+tongue
 ======
 
-project/test for a job in front-end
+Memory game to learing others languages.
 
 É necessário ter instalado nodejs e o Grunt. Pastas do projeto:
 
@@ -19,6 +19,6 @@ npm install
 grunt w
 ```
 
-2- Acessar a pasta "build" pelo browser.
+2- Acessar a pasta "build" no browser.
 
 Obrigado,
