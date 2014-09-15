@@ -1,19 +1,15 @@
 // CORES
-$cor-1: #00214c; //azul-marinho
-$cor-2: #00386a; //azul
-$cor-3: #666666; //cinza
-$cor-tributaria: #771938; //vermelho
-$cor-societaria: #154a90; //azul
-$cor-financeira:#26b797; //verde
-$cor-ceara:#277fb5; //azul
-$cor-bg-destaq: #edf0f0;
-$cor-borda: #cdd1d2;
+$cor-1: #333;
+$cor-2: #888;
+$cor-3: #ccc;
+$cor-4: #eee;
+$cor-5: #fbfbfb;
 
 // FONTE DEFAULT
-.fonte{font-style: normal;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
-.fonte-light{@extend .fonte;font-family: 'Open Sans';  font-weight: 300;}
-.fonte-regular{@extend .fonte;font-family: 'Open Sans'; font-weight: 400;}
-.fonte-bold{@extend .fonte;font-family: 'Open Sans'; font-weight: 600;}
-.fonte-black{@extend .fonte;font-family: 'Open Sans'; font-weight: 800;}
+.font{font-style: normal;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+.font-light{@extend .font;font-family: 'Open Sans';  font-weight: 300;}
+.font-regular{@extend .font;font-family: 'Open Sans'; font-weight: 400;}
+.font-bold{@extend .font;font-family: 'Open Sans'; font-weight: 600;}
+.font-black{@extend .font;font-family: 'Open Sans'; font-weight: 800;}
 
 //FONTE ICONES

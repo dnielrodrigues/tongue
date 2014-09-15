@@ -5,24 +5,29 @@
 .menu-pri{display: none;}
 
 // TOPO
-.top-bar{background:#666;height: 60px;}
-.top-bar .b-menu-pri{@extend .i-medium;@extend .icon-list2;padding: 5px 5px 0;display: block;float: left;}
-.tit-page{float: left; position: absolute; left: 15%; top: 9px; color: #fff;}
-.top-bar .icon-plus2{@extend .i-medium;float:right;}
-
+.top-bar{background:$cor-1;height: 40px;}
+.top-bar .b-menu-pri{@extend .i-small;@extend .icon-list2;display: block;float: left;}
+.tit-page{@extend .font-light;float: left; position: absolute; left: 40px; top: 6px; color: #f6f6f6; font-size: 2em;}
+.top-bar .b-add-deck{@extend .i-small;@extend .icon-plus2;float:right;}
 
 // LISTAR DECKS
-.deck-item,.deck-item-open{margin: 0;padding: 0; border-bottom: 1px solid #eee;}
-.l-deck{width: 85%;display: block;padding: 0;height: 60px;float: left;
-    &:hover{background:#f6f6f6;}
+.deck-list{
+    .b-show-options{@extend .i-medium;@extend .icon-ellipsis;color: $cor-3; background: $cor-5;overflow:hidden;position:absolute;right: 0;font-size:2em;}
+    .b-hyde-options{@extend .i-medium;@extend .icon-arrow-up6;height: 0;overflow:hidden;color: $cor-3; background: $cor-5;position:absolute;right: 0;}
 }
-.tit-deck{display: block; margin: 8px 0 3px 0;}
+.deck-item,
+.deck-item-open{
+    margin: 0;padding: 0; border-bottom: 1px solid #eee;position: relative;float: left;width: 100%;
+}
+.l-deck,
+.l-folder{display: block;padding: 0;height: 60px;float: left;width: 100%;
+    &:hover{background:$cor-3;}
+    .i-folder{@extend .icon-folder;@extend .i-medium;float: left;color: $cor-4;font-size:2em;}
+    .i-deck{@extend .icon-docs;@extend .i-medium;float: left;color: $cor-4;font-size:2em;}
+}
+.tit-deck{display: block; margin: 12px 0 3px;}
 .info-small{font-size:0.6em;}
 .more-options{height: 0;overflow:hidden;}
-
-.deck-list .icon-docs{float: left; font-size: 2em; padding: 12px; color: #eee;}
-.deck-list .icon-ellipsis{@extend .i-medium;font-size: 2.5em; color: #ccc; background: #f8f8f8;overflow:hidden;}
-.deck-list .icon-arrow-up6{@extend .i-medium;height: 0;overflow:hidden;font-size: 2.5em; color: #ccc; background: #f8f8f8;}
 
 // MENU DO DECK
 .deck-item-open{}

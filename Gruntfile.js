@@ -4,7 +4,7 @@ module.exports = function(grunt) {
 
   	//AÇÕES
     uglify: {
-    	'build/js/scripts.js' : ['src/js/lib.js','src/js/app.js']
+    	'build/js/scripts.js' : ['src/js/drLib.js','src/js/drApp.js']
     },
 
     sass : {

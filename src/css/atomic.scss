@@ -6,10 +6,6 @@ hover: passar do mouse
 visited: visitado
 active: licando
 */
-a,a:link{color:$cor-1;}
-a:hover{color:$cor-2;}
-a:active{color:$cor-1;}
-a:visited{color:$cor-2;}
 
 // GRID
 @mixin largura-coluna($c) {
@@ -41,7 +37,7 @@ a:visited{color:$cor-2;}
 .colunas-16{@include largura-coluna(16); @extend .colunas;}
 
 // BOX SIZING
-body{
+body,button{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -49,19 +45,19 @@ body{
 
 /* CLASSES BASICAS */
 .b{border: none; color: #fff; font-size: 1.4em; line-height: 15px; margin: 0;display: block;float: left;text-decoration: none;cursor: pointer;padding: 15px;}
-.b-destaq{@extend .b;@extend .fonte-regular;/*background: $cor-primaria;*/display: block;}
+.b-destaq{@extend .b;@extend .font-regular;display: block;}
 .b-pri{@extend .b;}
 .b-sec{@extend .b;background: #a4acb1;padding: 10px;margin: 10px;}
-.l{/*color: $cor-secundaria;*/text-decoration: underline;}
+.l{text-decoration: underline;}
 .l-destaq{@extend .l;font-size: 1.6em;}
 .f{position: relative;}
-.c{padding: 10px;/*border: 1px solid $cor-borda;*/float: left;margin: 0;}
+.c{padding: 10px;float: left;margin: 0;}
 .s{background: #ddd; border: none; height: 32px; margin: 0; padding: 0;}
 
 // ICONES
 .i{@extend .icon;cursor:pointer;margin: 0; padding: 0; border: 0;background: none;color: #ccc;display: block;display: block; overflow: hidden;}
 .i-big{@extend .i;font-size:6em;}
-.i-medium{@extend .i;font-size:4em; width: 15%;  height: 60px; }
+.i-medium{@extend .i;font-size:4em; height: 60px; }
 .i-small{@extend .i;font-size:2em;}
 
 /* TAGS */
@@ -70,8 +66,6 @@ strong{font-size: 1.2em;}
 select,input,button{outline: none;}
 p,li{font-size: 1.2em;line-height: 1.4em;}
 li{background: url(../imgs/marcador-li.jpg) no-repeat 0 5px; padding-left: 12px;}
-a{color:#ddd;text-decoration:none;font-size:1.4em;}
-a:hover{color:#999;text-decoration:none;}
 h1,h2,h3,h4,h5,h6{font-style: normal; font-weight: 300;color:#333;}
 h1{font-size:3em}
 h2{font-size:2.6em}
@@ -79,12 +73,18 @@ h3{font-size:2.2em}
 h4{font-size:1.8em}
 h5{font-size:1.4em}
 h6{font-size:1em}
+a,button{color:$cor-4;text-decoration:none;font-size:1.4em;}
+button:hover,a:hover{color:$cor-5;text-decoration:none;background:$cor-3;}
+a:link{color:$cor-1;}
+a:hover{color:$cor-2;}
+a:active{color:$cor-1;}
+a:visited{color:$cor-2;}
 
 // ICONES
 .i{cursor:pointer;margin: 0; padding: 0; border: 0;background: none;color: #ccc;}
-.i-big{@extend .i;font-size:6em;}
-.i-medium{@extend .i;font-size:4em; width: 15%;  height: 60px; }
-.i-small{@extend .i;font-size:2em;}
+.i-big{@extend .i;font-size:6em;height: 80px;width: 80px;line-height:80px;text-align: center;}
+.i-medium{@extend .i;font-size:4em; height: 60px;width: 60px;line-height:60px;text-align: center;}
+.i-small{@extend .i;font-size:2em;height: 40px;width: 40px;line-height:40px;text-align: center;}
 
 
 
