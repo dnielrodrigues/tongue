@@ -15,7 +15,7 @@ var drLib = {
     deleteNodeElement : function(e){
         e.parentNode.removeChild(e);
     },
-    
+
     //INSERIR CLASSE NO MAPA DO GOOGLE PARA PERMITIR ESTILO
     googlemapsIncludeClass : function(parentElementId,mapClass){
         var parent = document.getElementById(parentElementId);
@@ -25,13 +25,33 @@ var drLib = {
         };
     },
 
-    testElement : function( elemId ){
+    testNodeElementById : function( elemId ){
         //testa se existe elemento html com o Id
         if (document.getElementById(elemId)!=null) {
             return true;
         }else{
             return false;
         }
+    },
+
+    testNodeElementsByClass : function( elemClass , containerId ){
+        //testa se existe elemento html com a class dentro do elemento container do Id
+        /*
+         * elemClass = "classe do elemento a ser testado"
+         * containerId = "OPCIONAL: id do elemento container"
+         */
+
+        //armazena elementos alvo em variáveis
+        if ( containerId == null )
+            var $e = document.getElementsByClassName( elemClass );
+        else
+            var $e = document.getElementById( containerId ).getElementsByClassName( elemClass );
+
+        //testa array booleano
+        if ( $e.length == 0 )
+            return false;
+        else
+            return true;
     },
 
     changeClassOnClick : function(args){
@@ -96,6 +116,34 @@ var drLib = {
     doubleChangeClassOnClick : function(args){
         /*
          * TROCA CLASSE DE UM ELEMENTO HTML AO CLICAR NO BOTAO E RETORNA AO CLICAR NOVAMENTE
+         *
+         * var args = {
+         *      b : elemento botao para clique
+         *      eTarget: elemento alvo que terá a classe trocada
+         *      class1 : classe para troca 1
+         *      class2 : classe para troca 2
+         * }
+         */
+
+        //carrega elementos em variaveis
+        var $b = args.b;
+        var $target = args.eTarget;
+
+        //dispara evento clique
+        $b.addEventListener('click', function() {
+            //seta a classe correta
+            if ( $target.className == args.class1) {
+                $target.className = args.class2;
+            } else{
+                $target.className = args.class1;
+            };
+        }, true);
+
+    },
+
+    doubleChangeClassOnClickById : function(args){
+        /*
+         * TROCA CLASSE DE UM ELEMENTO HTML AO CLICAR NO BOTAO E RETORNA AO CLICAR NOVAMENTE
          * atributos do objeto/parametro "args":
          *      bId : elemetno
          *      targetId : id do elemento alvo que terá a classe trocada
@@ -109,7 +157,7 @@ var drLib = {
             class2 : "changed-class"
         };
 
-        if ( gibeeLib.testElement(args.bId) & gibeeLib.testElement(args.targetId) ) {
+        if ( this.testElement(args.bId) & this.testElement(args.targetId) ) {
             //carrega elementos em variaveis
             var $b = document.getElementById(args.bId);
             var $target = document.getElementById(args.targetId);

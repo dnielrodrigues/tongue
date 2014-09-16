@@ -27,7 +27,8 @@
 }
 .tit-deck{display: block; margin: 12px 0 3px;}
 .info-small{font-size:0.6em;}
-.more-options{height: 0;overflow:hidden;}
+.more-options{height: 0; overflow: hidden; float: left; width: 100%;}
+.deck-item-open .more-options{height:130px;}
 
 // MENU DO DECK
 .deck-item-open{}
