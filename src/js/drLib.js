@@ -25,7 +25,7 @@ var drLib = {
         };
     },
 
-    testNodeElementById : function( elemId ){
+    testElementById : function( elemId ){
         //testa se existe elemento html com o Id
         if (document.getElementById(elemId)!=null) {
             return true;
@@ -34,7 +34,7 @@ var drLib = {
         }
     },
 
-    testNodeElementsByClass : function( elemClass , containerId ){
+    testElementsByClass : function( elemClass , containerId ){
         //testa se existe elemento html com a class dentro do elemento container do Id
         /*
          * elemClass = "classe do elemento a ser testado"

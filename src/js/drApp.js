@@ -4,49 +4,50 @@
  * Author: @dnielrodrigues
  */
 
-var drApp = (function(){
-
-    var module = {};
-
-    //acao inicial
-    module._init = function(){
-        console.log('teste de modulo');
-
-        this.showHydeDeckOptions();
-    };
+var drApp = {
 
     //mostrar opcoes de deck
-    module.showHydeDeckOptions = function(){
+    showHydeDeckOptions : function(){
 
-        //testar se elementos existem
-        if ( drLib.testNodeElementsByClass('b-show-options','deck-list') ) {
-            //carrega botoes em variaveis
-            var $bts = document.getElementById('deck-list').getElementsByClassName('b-show-options');
-            var $targets = document.getElementById('deck-list').getElementsByClassName('deck-item');
+        var args = {
 
-            //loop dos botoes
-            for (var i = 0; i < $bts.length; i++) {
-                //cria um escopo para cada laço 
-                (function($b){
-                    //evento clique
-                    $b.addEventListener('click', function(){
-                        //carrega alvos em variavel
-                        var $target = $b.parentNode;
-                        //exibe opcoes
-                        drLib.doubleChangeClassOnClick({
-                            b : $b,
-                            eTarget : $target,
-                            class1 : "deck-item",
-                            class2 : "deck-item-open"
-                        });
-                    },true);
-                } ($bts[i]) );
-            };
-        };
+            //parametros para o módulo
+            aList : document.getElementsByClassName("b-show-options"),
+            pList : document.getElementsByClassName("deck-item"),
+            eventType : "click",
+            
+            //Abrir Deck Clicado
+            mainAction : function($b,$target,bList,targetList){
+                //troca a classe
+                $target.classList.toggle("open");
+            },
 
-    };
+            //Fechar o outros Decks não clicados
+            afterAction : function($b,$target,bList,targetList){
+                //loop decks
+                for (var i = 0; i < targetList.length; i++) {
+                    //testa target é o atual
+                    if (targetList[i] != $target) {
+                        //fecha o item
+                        targetList[i].classList.remove("open");
+                    };
+                };
+            }
+        }
 
-    //Inicializa toda a aplicação
-    module._init();
+        //Usa o módulo DR Hexagram para esconder e ocultar as opcoes de deck
+        drHexagramModule.init(args);
 
-}());
+    },
+
+};
+
+//Executa toda a Aplicação
+(function(){
+    for (var i in drApp) {
+        drApp[i]();
+    }
+})();
+
+
+

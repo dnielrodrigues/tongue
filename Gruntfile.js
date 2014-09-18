@@ -4,7 +4,7 @@ module.exports = function(grunt) {
 
   	//AÇÕES
     uglify: {
-    	'build/js/scripts.js' : ['src/js/drLib.js','src/js/drApp.js']
+    	'build/js/scripts.js' : ['src/js/drLib.js','src/js/drHexagramModule.js','src/js/drApp.js']
     },
 
     sass : {

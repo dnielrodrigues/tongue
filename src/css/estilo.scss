@@ -15,8 +15,7 @@
     .b-show-options{@extend .i-medium;@extend .icon-ellipsis;color: $cor-3; background: $cor-5;overflow:hidden;position:absolute;right: 0;font-size:2em;}
     .b-hyde-options{@extend .i-medium;@extend .icon-arrow-up6;height: 0;overflow:hidden;color: $cor-3; background: $cor-5;position:absolute;right: 0;}
 }
-.deck-item,
-.deck-item-open{
+.deck-item{
     margin: 0;padding: 0; border-bottom: 1px solid #eee;position: relative;float: left;width: 100%;
 }
 .l-deck,
@@ -28,7 +27,7 @@
 .tit-deck{display: block; margin: 12px 0 3px;}
 .info-small{font-size:0.6em;}
 .more-options{height: 0; overflow: hidden; float: left; width: 100%;}
-.deck-item-open .more-options{height:130px;}
+.deck-item.open .more-options{height:130px;}
 
 // MENU DO DECK
 .deck-item-open{}
