@@ -13,3 +13,22 @@ $cor-5: #fbfbfb;
 .font-black{@extend .font;font-family: 'Open Sans'; font-weight: 800;}
 
 //FONTE ICONES
+
+//TRANSITION
+.full-transition{
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+}
+
+.full-transition-slow{
+    -webkit-transition: all .7s ease-out;
+    -moz-transition: all .7s ease-out;
+    transition: all .7s ease-out;
+}
+
+.full-transition-fast{
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}

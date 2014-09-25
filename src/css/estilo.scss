@@ -7,17 +7,24 @@
 // TOPO
 .top-bar{background:$cor-1;height: 40px;}
 .top-bar .b-menu-pri{@extend .i-small;@extend .icon-list2;display: block;float: left;}
+.top-bar .b-go-back{@extend .i-small;@extend .icon-arrow-left7;display: block;float: left;}
+.top-bar .l-add-deck{@extend .i-small;@extend .icon-plus2;float:right;}
 .tit-page{@extend .font-light;float: left; position: absolute; left: 40px; top: 6px; color: #f6f6f6; font-size: 2em;}
-.top-bar .b-add-deck{@extend .i-small;@extend .icon-plus2;float:right;}
+
+// FORMULARIOS
+.f{}
+.c{background:#eee;}
+.t{background:#eee;}
+.c-title{@extend .c;@extend .colums-16;}
+.t-description{@extend .t;@extend .colums-16;}
+.f-edit-deck{@extend .ctn;}
 
 // LISTAR DECKS
 .deck-list{
-    .b-show-options{@extend .i-medium;@extend .icon-ellipsis;color: $cor-3; background: $cor-5;overflow:hidden;position:absolute;right: 0;font-size:2em;}
+    .b-show-options{@extend .i-medium;@extend .icon-ellipsis;color: $cor-3; height:100%; background: $cor-5;overflow:hidden;position:absolute;right: 0;font-size:2em;}
     .b-hyde-options{@extend .i-medium;@extend .icon-arrow-up6;height: 0;overflow:hidden;color: $cor-3; background: $cor-5;position:absolute;right: 0;}
 }
-.deck-item{
-    margin: 0;padding: 0; border-bottom: 1px solid #eee;position: relative;float: left;width: 100%;
-}
+.deck-item{margin: 0;padding: 0; border-bottom: 1px solid #eee;position: relative;float: left;width: 100%;}
 .l-deck,
 .l-folder{display: block;padding: 0;height: 60px;float: left;width: 100%;
     &:hover{background:$cor-3;}
@@ -26,8 +33,18 @@
 }
 .tit-deck{display: block; margin: 12px 0 3px;}
 .info-small{font-size:0.6em;}
-.more-options{height: 0; overflow: hidden; float: left; width: 100%;}
-.deck-item.open .more-options{height:130px;}
+.deck-item.open .more-options{height: 40px;}
+.more-options{@extend .full-transition;height: 0; overflow: hidden; float: left; width: 100%;}
+.b-listar,
+.b-editar,
+.b-deletar,
+.b-duplicar,
+.b-mover{float: left;}
+.b-listar{@extend .i-small;@extend .icon-list;}
+.b-editar{@extend .i-small;@extend .icon-pencil;}
+.b-deletar{@extend .i-small;@extend .icon-trash;}
+.b-duplicar{@extend .i-small;@extend .icon-popup;}
+.b-mover{@extend .i-small;@extend .icon-arrow;}
 
 // MENU DO DECK
 .deck-item-open{}

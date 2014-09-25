@@ -1,3 +1,4 @@
+<?php include 'Lib.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,3 +27,56 @@
     <script src="http://polyfill.io"></script>
 </head>
 <body>
+
+<!-- MENU GERAL -->
+<nav class="menu-pri">
+    <a href="javascript:void();" class="l-men-pri"><span class="icone">ICONE</span></a>
+    span.icon-logout
+</nav>
+
+<!-- TOPO -->
+<header class="top-bar">
+    <?php 
+        //BOTAO SUPERIOR ESQUERDO
+        switch ($pageSlug) {
+            case 'read-decks':
+                ?> <button class="b-menu-pri" id="b-menu-pri"></button> <?php
+                break;
+            
+            default:
+                ?> <button class="b-go-back" id="b-go-back"></button> <?php
+                break;
+        }
+    ?>
+    <h1 class="tit-page"><?php echo $pageName; ?></h1>
+    <?php
+        //BOTAO SUPERIOR DIREITO
+        switch ($pageSlug) {
+            case 'read-decks':
+                echo '<a href="edit-deck" class="l-add-deck" id="l-add-deck"></a>';
+                break;
+            
+            default:
+                echo '';
+                break;
+        }
+    ?>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

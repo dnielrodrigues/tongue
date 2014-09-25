@@ -1,24 +1,11 @@
 <?php 
 	$pageName = "Listar Decks";
-    $pageSlug = "listar-decks";
+    $pageSlug = "read-decks";
 	include 'header.php';
 ?>
 
-<!-- MENU GERAL -->
-<nav class="menu-pri">
-    <a href="javascript:void();" class="l-men-pri"><span class="icone">ICONE</span></a>
-    span.icon-logout
-</nav>
-
 <!-- APLICATION SCREEN -->
-<section class="ctn-app">
-
-    <!-- TOPO -->
-    <header class="top-bar">
-        <button class="b-menu-pri" id="b-menu-pri"></button>
-        <h1 class="tit-page">Meus Decks</h1>
-        <button class="b-add-deck" id="new-deck"></button>
-    </header>
+<section class="ctn-pages">
 
     <!-- CORPO -->
     <section class="body-app">
@@ -33,11 +20,11 @@
                 <button class="b-hyde-options"></button>
                 <button class="b-show-options"></button>
                 <div class="more-options">
-                    <span class="icon-list"></span>
-                    <span class="icon-pencil"></span>
-                    <span class="icon-trash"></span>
-                    <span class="icon-popup"></span>
-                    <span class="icon-arrow"></span>
+                    <button class="b-listar"></button>
+                    <button class="b-editar"></button>
+                    <button class="b-deletar"></button>
+                    <button class="b-duplicar"></button>
+                    <button class="b-mover"></button>
                 </div>
             </li>
 
@@ -51,11 +38,11 @@
                 <button class="b-hyde-options"></button>
                 <button class="b-show-options"></button>
                 <div class="more-options">
-                    <span class="icon-list"></span>
-                    <span class="icon-pencil"></span>
-                    <span class="icon-trash"></span>
-                    <span class="icon-popup"></span>
-                    <span class="icon-arrow"></span>
+                    <button class="b-listar"></button>
+                    <button class="b-editar"></button>
+                    <button class="b-deletar"></button>
+                    <button class="b-duplicar"></button>
+                    <button class="b-mover"></button>
                 </div>
             </li>
 
@@ -69,11 +56,11 @@
                 <button class="b-hyde-options"></button>
                 <button class="b-show-options"></button>
                 <div class="more-options">
-                    <span class="icon-list"></span>
-                    <span class="icon-pencil"></span>
-                    <span class="icon-trash"></span>
-                    <span class="icon-popup"></span>
-                    <span class="icon-arrow"></span>
+                    <button class="b-listar"></button>
+                    <button class="b-editar"></button>
+                    <button class="b-deletar"></button>
+                    <button class="b-duplicar"></button>
+                    <button class="b-mover"></button>
                 </div>
             </li>
         </ul>

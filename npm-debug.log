@@ -1,0 +1,1581 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'grunt-contrib-concat' ]
+2 info using npm@2.0.0-beta.0
+3 info using node@v0.10.31
+4 verbose node symlink /usr/local/bin/node
+5 warn package.json Luz.vc@0.0.0 No repository field.
+6 verbose readDependencies using package.json deps
+7 verbose cache add [ 'grunt-contrib-concat', null ]
+8 verbose cache add spec="grunt-contrib-concat" args=["grunt-contrib-concat",null]
+9 verbose parsed spec { raw: 'grunt-contrib-concat',
+9 verbose parsed spec   scope: null,
+9 verbose parsed spec   name: 'grunt-contrib-concat',
+9 verbose parsed spec   rawSpec: '',
+9 verbose parsed spec   spec: '*',
+9 verbose parsed spec   type: 'range' }
+10 verbose addNamed [ 'grunt-contrib-concat', '*' ]
+11 verbose addNamed [ null, '*' ]
+12 silly lockFile d8fbfde8-grunt-contrib-concat grunt-contrib-concat@*
+13 verbose lock grunt-contrib-concat@* /Users/danielrodrigues/.npm/d8fbfde8-grunt-contrib-concat.lock
+14 silly addNameRange { name: 'grunt-contrib-concat', range: '*', hasData: false }
+15 verbose mapToRegistry name grunt-contrib-concat
+16 verbose mapToRegistry uri https://registry.npmjs.org/grunt-contrib-concat
+17 verbose request on initialization, where is /grunt-contrib-concat
+18 verbose request after pass 1, where is /grunt-contrib-concat
+19 verbose request url raw /grunt-contrib-concat
+20 verbose request resolving registry [ 'https://registry.npmjs.org/', './grunt-contrib-concat' ]
+21 verbose request after pass 2, where is https://registry.npmjs.org/grunt-contrib-concat
+22 verbose request no auth needed
+23 info retrier registry request attempt 1 at 00:11:15
+24 verbose request id 5dba5486f6c7aa74
+25 verbose etag "263R9QJCGLFWCBEZHTHCNX84I"
+26 http request GET https://registry.npmjs.org/grunt-contrib-concat
+27 http 304 https://registry.npmjs.org/grunt-contrib-concat
+28 silly registry.get cb [ 304,
+28 silly registry.get   { date: 'Thu, 25 Sep 2014 03:11:16 GMT',
+28 silly registry.get     server: 'Apache',
+28 silly registry.get     via: '1.1 varnish',
+28 silly registry.get     'last-modified': 'Thu, 25 Sep 2014 03:11:16 GMT',
+28 silly registry.get     'cache-control': 'max-age=60',
+28 silly registry.get     etag: '"263R9QJCGLFWCBEZHTHCNX84I"',
+28 silly registry.get     'x-served-by': 'cache-iad2133-IAD',
+28 silly registry.get     'x-cache': 'HIT',
+28 silly registry.get     'x-cache-hits': '1',
+28 silly registry.get     'x-timer': 'S1411614676.839812,VS0,VE0',
+28 silly registry.get     vary: 'Accept',
+28 silly registry.get     'content-length': '0',
+28 silly registry.get     'keep-alive': 'timeout=10, max=50',
+28 silly registry.get     connection: 'Keep-Alive' } ]
+29 verbose etag https://registry.npmjs.org/grunt-contrib-concat from cache
+30 silly addNameRange number 2 { name: 'grunt-contrib-concat', range: '*', hasData: true }
+31 silly addNameRange versions [ 'grunt-contrib-concat',
+31 silly addNameRange   [ '0.1.0',
+31 silly addNameRange     '0.1.1',
+31 silly addNameRange     '0.1.2',
+31 silly addNameRange     '0.1.3',
+31 silly addNameRange     '0.2.0',
+31 silly addNameRange     '0.3.0',
+31 silly addNameRange     '0.4.0',
+31 silly addNameRange     '0.5.0',
+31 silly addNameRange     '0.1.2-rc5',
+31 silly addNameRange     '0.1.2-rc6' ] ]
+32 verbose addNamed [ 'grunt-contrib-concat', '0.5.0' ]
+33 verbose addNamed [ '0.5.0', '0.5.0' ]
+34 silly lockFile 02f03e4c-grunt-contrib-concat-0-5-0 grunt-contrib-concat@0.5.0
+35 verbose lock grunt-contrib-concat@0.5.0 /Users/danielrodrigues/.npm/02f03e4c-grunt-contrib-concat-0-5-0.lock
+36 silly lockFile 02f03e4c-grunt-contrib-concat-0-5-0 grunt-contrib-concat@0.5.0
+37 silly lockFile 02f03e4c-grunt-contrib-concat-0-5-0 grunt-contrib-concat@0.5.0
+38 silly lockFile d8fbfde8-grunt-contrib-concat grunt-contrib-concat@*
+39 silly lockFile d8fbfde8-grunt-contrib-concat grunt-contrib-concat@*
+40 silly resolved [ { name: 'grunt-contrib-concat',
+40 silly resolved     description: 'Concatenate files.',
+40 silly resolved     version: '0.5.0',
+40 silly resolved     homepage: 'https://github.com/gruntjs/grunt-contrib-concat',
+40 silly resolved     author: { name: 'Grunt Team', url: 'http://gruntjs.com/' },
+40 silly resolved     repository:
+40 silly resolved      { type: 'git',
+40 silly resolved        url: 'git://github.com/gruntjs/grunt-contrib-concat.git' },
+40 silly resolved     bugs: { url: 'https://github.com/gruntjs/grunt-contrib-concat/issues' },
+40 silly resolved     licenses: [ [Object] ],
+40 silly resolved     engines: { node: '>= 0.8.0' },
+40 silly resolved     scripts: { test: 'grunt test' },
+40 silly resolved     dependencies: { chalk: '~0.5.0', 'source-map': '~0.1.36' },
+40 silly resolved     devDependencies:
+40 silly resolved      { 'grunt-contrib-jshint': '~0.10.0',
+40 silly resolved        'grunt-contrib-nodeunit': '~0.4.0',
+40 silly resolved        'grunt-contrib-clean': '~0.5.0',
+40 silly resolved        'grunt-contrib-internal': '~0.4.2',
+40 silly resolved        grunt: '~0.4.0' },
+40 silly resolved     peerDependencies: { grunt: '~0.4.0' },
+40 silly resolved     keywords: [ 'gruntplugin' ],
+40 silly resolved     files: [ 'tasks', 'LICENSE-MIT' ],
+40 silly resolved     _id: 'grunt-contrib-concat@0.5.0',
+40 silly resolved     dist:
+40 silly resolved      { shasum: '78cfc6ba1ee9bb2188a1d6ba7ec5cf15fd1316c9',
+40 silly resolved        tarball: 'http://registry.npmjs.org/grunt-contrib-concat/-/grunt-contrib-concat-0.5.0.tgz' },
+40 silly resolved     _from: 'grunt-contrib-concat@*',
+40 silly resolved     _npmVersion: '1.3.26',
+40 silly resolved     _npmUser: { name: 'vladikoff', email: 'vlad@vladikoff.com' },
+40 silly resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+40 silly resolved     directories: {},
+40 silly resolved     _shasum: '78cfc6ba1ee9bb2188a1d6ba7ec5cf15fd1316c9',
+40 silly resolved     _resolved: 'https://registry.npmjs.org/grunt-contrib-concat/-/grunt-contrib-concat-0.5.0.tgz',
+40 silly resolved     readme: 'ERROR: No README data found!' } ]
+41 info install grunt-contrib-concat@0.5.0 into /Users/danielrodrigues/Sites/github/tongue
+42 info installOne grunt-contrib-concat@0.5.0
+43 verbose node_modules/grunt-contrib-concat unbuild
+44 info preuninstall grunt-contrib-concat@0.5.0
+45 info uninstall grunt-contrib-concat@0.5.0
+46 verbose true,/Users/danielrodrigues/Sites/github/tongue/node_modules,/Users/danielrodrigues/Sites/github/tongue/node_modules unbuild grunt-contrib-concat@0.5.0
+47 info postuninstall grunt-contrib-concat@0.5.0
+48 verbose gentlyRm vacuuming /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat
+49 silly gentlyRm purging /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat
+50 silly gentlyRm quitting because other entries in /Users/danielrodrigues/Sites/github/tongue/node_modules
+51 verbose tar unpack /Users/danielrodrigues/.npm/grunt-contrib-concat/0.5.0/package.tgz
+52 silly lockFile 2725a84e-ode-modules-grunt-contrib-concat tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat
+53 verbose lock tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat /Users/danielrodrigues/.npm/2725a84e-ode-modules-grunt-contrib-concat.lock
+54 silly lockFile a8e04ed5-contrib-concat-0-5-0-package-tgz tar:///Users/danielrodrigues/.npm/grunt-contrib-concat/0.5.0/package.tgz
+55 verbose lock tar:///Users/danielrodrigues/.npm/grunt-contrib-concat/0.5.0/package.tgz /Users/danielrodrigues/.npm/a8e04ed5-contrib-concat-0-5-0-package-tgz.lock
+56 verbose gentlyRm vacuuming /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat
+57 silly gunzTarPerm modes [ '755', '644' ]
+58 silly gunzTarPerm extractEntry package.json
+59 silly gunzTarPerm extractEntry README.md
+60 silly gunzTarPerm extractEntry LICENSE-MIT
+61 silly gunzTarPerm extractEntry tasks/concat.js
+62 silly gunzTarPerm extractEntry tasks/lib/comment.js
+63 silly gunzTarPerm extractEntry tasks/lib/sourcemap.js
+64 silly lockFile 2725a84e-ode-modules-grunt-contrib-concat tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat
+65 silly lockFile 2725a84e-ode-modules-grunt-contrib-concat tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat
+66 silly lockFile a8e04ed5-contrib-concat-0-5-0-package-tgz tar:///Users/danielrodrigues/.npm/grunt-contrib-concat/0.5.0/package.tgz
+67 silly lockFile a8e04ed5-contrib-concat-0-5-0-package-tgz tar:///Users/danielrodrigues/.npm/grunt-contrib-concat/0.5.0/package.tgz
+68 info preinstall grunt-contrib-concat@0.5.0
+69 verbose readDependencies using package.json deps
+70 verbose readDependencies using package.json deps
+71 verbose cache add [ 'chalk@~0.5.0', null ]
+72 verbose cache add spec="chalk@~0.5.0" args=["chalk@~0.5.0",null]
+73 verbose cache add [ 'source-map@~0.1.36', null ]
+74 verbose cache add spec="source-map@~0.1.36" args=["source-map@~0.1.36",null]
+75 verbose parsed spec { raw: 'chalk@~0.5.0',
+75 verbose parsed spec   scope: null,
+75 verbose parsed spec   name: 'chalk',
+75 verbose parsed spec   rawSpec: '~0.5.0',
+75 verbose parsed spec   spec: '>=0.5.0-0 <0.6.0-0',
+75 verbose parsed spec   type: 'range' }
+76 verbose addNamed [ 'chalk', '>=0.5.0-0 <0.6.0-0' ]
+77 verbose addNamed [ null, '>=0.5.0-0 <0.6.0-0' ]
+78 silly lockFile 29edd5b1-chalk-0-5-0-0-0-6-0-0 chalk@>=0.5.0-0 <0.6.0-0
+79 verbose lock chalk@>=0.5.0-0 <0.6.0-0 /Users/danielrodrigues/.npm/29edd5b1-chalk-0-5-0-0-0-6-0-0.lock
+80 verbose parsed spec { raw: 'source-map@~0.1.36',
+80 verbose parsed spec   scope: null,
+80 verbose parsed spec   name: 'source-map',
+80 verbose parsed spec   rawSpec: '~0.1.36',
+80 verbose parsed spec   spec: '>=0.1.36-0 <0.2.0-0',
+80 verbose parsed spec   type: 'range' }
+81 verbose addNamed [ 'source-map', '>=0.1.36-0 <0.2.0-0' ]
+82 verbose addNamed [ null, '>=0.1.36-0 <0.2.0-0' ]
+83 silly lockFile d262b0f0-source-map-0-1-36-0-0-2-0-0 source-map@>=0.1.36-0 <0.2.0-0
+84 verbose lock source-map@>=0.1.36-0 <0.2.0-0 /Users/danielrodrigues/.npm/d262b0f0-source-map-0-1-36-0-0-2-0-0.lock
+85 silly addNameRange { name: 'chalk', range: '>=0.5.0-0 <0.6.0-0', hasData: false }
+86 verbose mapToRegistry name chalk
+87 verbose mapToRegistry uri https://registry.npmjs.org/chalk
+88 silly addNameRange { name: 'source-map',
+88 silly addNameRange   range: '>=0.1.36-0 <0.2.0-0',
+88 silly addNameRange   hasData: false }
+89 verbose mapToRegistry name source-map
+90 verbose mapToRegistry uri https://registry.npmjs.org/source-map
+91 verbose request on initialization, where is /chalk
+92 verbose request after pass 1, where is /chalk
+93 verbose request url raw /chalk
+94 verbose request resolving registry [ 'https://registry.npmjs.org/', './chalk' ]
+95 verbose request after pass 2, where is https://registry.npmjs.org/chalk
+96 verbose request no auth needed
+97 info retrier registry request attempt 1 at 00:11:16
+98 verbose etag "1SYQ9LRJYHN7AT8TK42L7I20B"
+99 http request GET https://registry.npmjs.org/chalk
+100 verbose request on initialization, where is /source-map
+101 verbose request after pass 1, where is /source-map
+102 verbose request url raw /source-map
+103 verbose request resolving registry [ 'https://registry.npmjs.org/', './source-map' ]
+104 verbose request after pass 2, where is https://registry.npmjs.org/source-map
+105 verbose request no auth needed
+106 info retrier registry request attempt 1 at 00:11:16
+107 verbose etag "C1IEW3BDZ5MVMFH75UU2NAM49"
+108 http request GET https://registry.npmjs.org/source-map
+109 http 304 https://registry.npmjs.org/chalk
+110 silly registry.get cb [ 304,
+110 silly registry.get   { date: 'Thu, 25 Sep 2014 03:11:17 GMT',
+110 silly registry.get     server: 'Apache',
+110 silly registry.get     via: '1.1 varnish',
+110 silly registry.get     'last-modified': 'Thu, 25 Sep 2014 03:10:49 GMT',
+110 silly registry.get     'cache-control': 'max-age=60',
+110 silly registry.get     etag: '"1SYQ9LRJYHN7AT8TK42L7I20B"',
+110 silly registry.get     'x-served-by': 'cache-iad2121-IAD',
+110 silly registry.get     'x-cache': 'HIT',
+110 silly registry.get     'x-cache-hits': '2',
+110 silly registry.get     'x-timer': 'S1411614677.348834,VS0,VE0',
+110 silly registry.get     vary: 'Accept',
+110 silly registry.get     'content-length': '0',
+110 silly registry.get     'keep-alive': 'timeout=10, max=50',
+110 silly registry.get     connection: 'Keep-Alive' } ]
+111 verbose etag https://registry.npmjs.org/chalk from cache
+112 http 304 https://registry.npmjs.org/source-map
+113 silly registry.get cb [ 304,
+113 silly registry.get   { date: 'Thu, 25 Sep 2014 03:11:17 GMT',
+113 silly registry.get     server: 'Apache',
+113 silly registry.get     via: '1.1 varnish',
+113 silly registry.get     'last-modified': 'Thu, 25 Sep 2014 03:11:17 GMT',
+113 silly registry.get     'cache-control': 'max-age=60',
+113 silly registry.get     etag: '"C1IEW3BDZ5MVMFH75UU2NAM49"',
+113 silly registry.get     'x-served-by': 'cache-iad2126-IAD',
+113 silly registry.get     'x-cache': 'HIT',
+113 silly registry.get     'x-cache-hits': '1',
+113 silly registry.get     'x-timer': 'S1411614677.347825,VS0,VE0',
+113 silly registry.get     vary: 'Accept',
+113 silly registry.get     'content-length': '0',
+113 silly registry.get     'keep-alive': 'timeout=10, max=50',
+113 silly registry.get     connection: 'Keep-Alive' } ]
+114 verbose etag https://registry.npmjs.org/source-map from cache
+115 silly addNameRange number 2 { name: 'source-map',
+115 silly addNameRange   range: '>=0.1.36-0 <0.2.0-0',
+115 silly addNameRange   hasData: true }
+116 silly addNameRange versions [ 'source-map',
+116 silly addNameRange   [ '0.0.0',
+116 silly addNameRange     '0.1.0',
+116 silly addNameRange     '0.1.1',
+116 silly addNameRange     '0.1.2',
+116 silly addNameRange     '0.1.3',
+116 silly addNameRange     '0.1.4',
+116 silly addNameRange     '0.1.5',
+116 silly addNameRange     '0.1.6',
+116 silly addNameRange     '0.1.7',
+116 silly addNameRange     '0.1.8',
+116 silly addNameRange     '0.1.9',
+116 silly addNameRange     '0.1.10',
+116 silly addNameRange     '0.1.11',
+116 silly addNameRange     '0.1.12',
+116 silly addNameRange     '0.1.13',
+116 silly addNameRange     '0.1.14',
+116 silly addNameRange     '0.1.15',
+116 silly addNameRange     '0.1.16',
+116 silly addNameRange     '0.1.17',
+116 silly addNameRange     '0.1.18',
+116 silly addNameRange     '0.1.19',
+116 silly addNameRange     '0.1.20',
+116 silly addNameRange     '0.1.21',
+116 silly addNameRange     '0.1.22',
+116 silly addNameRange     '0.1.23',
+116 silly addNameRange     '0.1.24',
+116 silly addNameRange     '0.1.25',
+116 silly addNameRange     '0.1.26',
+116 silly addNameRange     '0.1.27',
+116 silly addNameRange     '0.1.28',
+116 silly addNameRange     '0.1.29',
+116 silly addNameRange     '0.1.30',
+116 silly addNameRange     '0.1.31',
+116 silly addNameRange     '0.1.32',
+116 silly addNameRange     '0.1.33',
+116 silly addNameRange     '0.1.34',
+116 silly addNameRange     '0.1.35',
+116 silly addNameRange     '0.1.36',
+116 silly addNameRange     '0.1.37',
+116 silly addNameRange     '0.1.38',
+116 silly addNameRange     '0.1.39' ] ]
+117 verbose addNamed [ 'source-map', '0.1.39' ]
+118 verbose addNamed [ '0.1.39', '0.1.39' ]
+119 silly lockFile 53b17ed8-source-map-0-1-39 source-map@0.1.39
+120 verbose lock source-map@0.1.39 /Users/danielrodrigues/.npm/53b17ed8-source-map-0-1-39.lock
+121 silly addNameRange number 2 { name: 'chalk', range: '>=0.5.0-0 <0.6.0-0', hasData: true }
+122 silly addNameRange versions [ 'chalk',
+122 silly addNameRange   [ '0.1.0',
+122 silly addNameRange     '0.1.1',
+122 silly addNameRange     '0.2.0',
+122 silly addNameRange     '0.2.1',
+122 silly addNameRange     '0.3.0',
+122 silly addNameRange     '0.4.0',
+122 silly addNameRange     '0.5.0',
+122 silly addNameRange     '0.5.1' ] ]
+123 verbose addNamed [ 'chalk', '0.5.1' ]
+124 verbose addNamed [ '0.5.1', '0.5.1' ]
+125 silly lockFile c28973bb-chalk-0-5-1 chalk@0.5.1
+126 verbose lock chalk@0.5.1 /Users/danielrodrigues/.npm/c28973bb-chalk-0-5-1.lock
+127 silly lockFile 53b17ed8-source-map-0-1-39 source-map@0.1.39
+128 silly lockFile 53b17ed8-source-map-0-1-39 source-map@0.1.39
+129 silly lockFile c28973bb-chalk-0-5-1 chalk@0.5.1
+130 silly lockFile c28973bb-chalk-0-5-1 chalk@0.5.1
+131 silly lockFile d262b0f0-source-map-0-1-36-0-0-2-0-0 source-map@>=0.1.36-0 <0.2.0-0
+132 silly lockFile d262b0f0-source-map-0-1-36-0-0-2-0-0 source-map@>=0.1.36-0 <0.2.0-0
+133 silly lockFile 29edd5b1-chalk-0-5-0-0-0-6-0-0 chalk@>=0.5.0-0 <0.6.0-0
+134 silly lockFile 29edd5b1-chalk-0-5-0-0-0-6-0-0 chalk@>=0.5.0-0 <0.6.0-0
+135 silly resolved [ { name: 'source-map',
+135 silly resolved     description: 'Generates and consumes source maps',
+135 silly resolved     version: '0.1.39',
+135 silly resolved     homepage: 'https://github.com/mozilla/source-map',
+135 silly resolved     author: { name: 'Nick Fitzgerald', email: 'nfitzgerald@mozilla.com' },
+135 silly resolved     contributors:
+135 silly resolved      [ [Object],
+135 silly resolved        [Object],
+135 silly resolved        [Object],
+135 silly resolved        [Object],
+135 silly resolved        [Object],
+135 silly resolved        [Object],
+135 silly resolved        [Object],
+135 silly resolved        [Object],
+135 silly resolved        [Object],
+135 silly resolved        [Object],
+135 silly resolved        [Object],
+135 silly resolved        [Object],
+135 silly resolved        [Object],
+135 silly resolved        [Object],
+135 silly resolved        [Object],
+135 silly resolved        [Object],
+135 silly resolved        [Object],
+135 silly resolved        [Object],
+135 silly resolved        [Object],
+135 silly resolved        [Object],
+135 silly resolved        [Object],
+135 silly resolved        [Object],
+135 silly resolved        [Object],
+135 silly resolved        [Object],
+135 silly resolved        [Object] ],
+135 silly resolved     repository: { type: 'git', url: 'http://github.com/mozilla/source-map.git' },
+135 silly resolved     directories: { lib: './lib' },
+135 silly resolved     main: './lib/source-map.js',
+135 silly resolved     engines: { node: '>=0.8.0' },
+135 silly resolved     licenses: [ [Object] ],
+135 silly resolved     dependencies: { amdefine: '>=0.0.4' },
+135 silly resolved     devDependencies: { dryice: '>=0.4.8' },
+135 silly resolved     scripts:
+135 silly resolved      { test: 'node test/run-tests.js',
+135 silly resolved        build: 'node Makefile.dryice.js' },
+135 silly resolved     bugs: { url: 'https://github.com/mozilla/source-map/issues' },
+135 silly resolved     _id: 'source-map@0.1.39',
+135 silly resolved     _shasum: '64ad329c4761ab956ff7d011c6b205aeb66a2d4a',
+135 silly resolved     _from: 'source-map@>=0.1.36-0 <0.2.0-0',
+135 silly resolved     _npmVersion: '1.4.9',
+135 silly resolved     _npmUser: { name: 'nickfitzgerald', email: 'fitzgen@gmail.com' },
+135 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+135 silly resolved     dist:
+135 silly resolved      { shasum: '64ad329c4761ab956ff7d011c6b205aeb66a2d4a',
+135 silly resolved        tarball: 'http://registry.npmjs.org/source-map/-/source-map-0.1.39.tgz' },
+135 silly resolved     _resolved: 'https://registry.npmjs.org/source-map/-/source-map-0.1.39.tgz',
+135 silly resolved     readme: 'ERROR: No README data found!' },
+135 silly resolved   { name: 'chalk',
+135 silly resolved     version: '0.5.1',
+135 silly resolved     description: 'Terminal string styling done right. Created because the `colors` module does some really horrible things.',
+135 silly resolved     license: 'MIT',
+135 silly resolved     repository: { type: 'git', url: 'git://github.com/sindresorhus/chalk' },
+135 silly resolved     maintainers: [ [Object], [Object] ],
+135 silly resolved     engines: { node: '>=0.10.0' },
+135 silly resolved     scripts: { test: 'mocha', bench: 'matcha benchmark.js' },
+135 silly resolved     files: [ 'index.js' ],
+135 silly resolved     keywords:
+135 silly resolved      [ 'color',
+135 silly resolved        'colour',
+135 silly resolved        'colors',
+135 silly resolved        'terminal',
+135 silly resolved        'console',
+135 silly resolved        'cli',
+135 silly resolved        'string',
+135 silly resolved        'ansi',
+135 silly resolved        'styles',
+135 silly resolved        'tty',
+135 silly resolved        'formatting',
+135 silly resolved        'rgb',
+135 silly resolved        '256',
+135 silly resolved        'shell',
+135 silly resolved        'xterm',
+135 silly resolved        'log',
+135 silly resolved        'logging',
+135 silly resolved        'command-line',
+135 silly resolved        'text' ],
+135 silly resolved     dependencies:
+135 silly resolved      { 'ansi-styles': '^1.1.0',
+135 silly resolved        'escape-string-regexp': '^1.0.0',
+135 silly resolved        'has-ansi': '^0.1.0',
+135 silly resolved        'strip-ansi': '^0.3.0',
+135 silly resolved        'supports-color': '^0.2.0' },
+135 silly resolved     devDependencies: { matcha: '^0.5.0', mocha: '*' },
+135 silly resolved     gitHead: '994758f01293f1fdcf63282e9917cb9f2cfbdaac',
+135 silly resolved     bugs: { url: 'https://github.com/sindresorhus/chalk/issues' },
+135 silly resolved     homepage: 'https://github.com/sindresorhus/chalk',
+135 silly resolved     _id: 'chalk@0.5.1',
+135 silly resolved     _shasum: '663b3a648b68b55d04690d49167aa837858f2174',
+135 silly resolved     _from: 'chalk@>=0.5.0-0 <0.6.0-0',
+135 silly resolved     _npmVersion: '1.4.14',
+135 silly resolved     _npmUser: { name: 'jbnicolai', email: 'jappelman@xebia.com' },
+135 silly resolved     dist:
+135 silly resolved      { shasum: '663b3a648b68b55d04690d49167aa837858f2174',
+135 silly resolved        tarball: 'http://registry.npmjs.org/chalk/-/chalk-0.5.1.tgz' },
+135 silly resolved     directories: {},
+135 silly resolved     _resolved: 'https://registry.npmjs.org/chalk/-/chalk-0.5.1.tgz',
+135 silly resolved     readme: 'ERROR: No README data found!' } ]
+136 info install source-map@0.1.39 into /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat
+137 info install chalk@0.5.1 into /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat
+138 info installOne source-map@0.1.39
+139 info installOne chalk@0.5.1
+140 verbose node_modules/grunt-contrib-concat/node_modules/source-map unbuild
+141 verbose node_modules/grunt-contrib-concat/node_modules/chalk unbuild
+142 verbose gentlyRm vacuuming /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/source-map
+143 verbose gentlyRm vacuuming /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk
+144 verbose tar unpack /Users/danielrodrigues/.npm/source-map/0.1.39/package.tgz
+145 silly lockFile 99c6da2d-b-concat-node-modules-source-map tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/source-map
+146 verbose lock tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/source-map /Users/danielrodrigues/.npm/99c6da2d-b-concat-node-modules-source-map.lock
+147 silly lockFile d9d6ce29-pm-source-map-0-1-39-package-tgz tar:///Users/danielrodrigues/.npm/source-map/0.1.39/package.tgz
+148 verbose lock tar:///Users/danielrodrigues/.npm/source-map/0.1.39/package.tgz /Users/danielrodrigues/.npm/d9d6ce29-pm-source-map-0-1-39-package-tgz.lock
+149 verbose tar unpack /Users/danielrodrigues/.npm/chalk/0.5.1/package.tgz
+150 silly lockFile 1367c495-ontrib-concat-node-modules-chalk tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk
+151 verbose lock tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk /Users/danielrodrigues/.npm/1367c495-ontrib-concat-node-modules-chalk.lock
+152 silly lockFile 7331f9df-gues-npm-chalk-0-5-1-package-tgz tar:///Users/danielrodrigues/.npm/chalk/0.5.1/package.tgz
+153 verbose lock tar:///Users/danielrodrigues/.npm/chalk/0.5.1/package.tgz /Users/danielrodrigues/.npm/7331f9df-gues-npm-chalk-0-5-1-package-tgz.lock
+154 verbose gentlyRm vacuuming /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/source-map
+155 silly gunzTarPerm modes [ '755', '644' ]
+156 verbose gentlyRm vacuuming /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk
+157 silly gunzTarPerm modes [ '755', '644' ]
+158 silly gunzTarPerm extractEntry package.json
+159 silly gunzTarPerm extractEntry package.json
+160 silly gunzTarPerm extractEntry .npmignore
+161 silly gunzTarPerm extractEntry README.md
+162 silly gunzTarPerm extractEntry index.js
+163 silly gunzTarPerm extractEntry readme.md
+164 silly gunzTarPerm extractEntry LICENSE
+165 silly gunzTarPerm extractEntry Makefile.dryice.js
+166 silly gunzTarPerm extractEntry CHANGELOG.md
+167 silly gunzTarPerm extractEntry .tern-port
+168 silly gunzTarPerm extractEntry build/assert-shim.js
+169 silly gunzTarPerm extractEntry build/mini-require.js
+170 silly gunzTarPerm extractEntry build/suffix-browser.js
+171 silly gunzTarPerm extractEntry build/test-prefix.js
+172 silly gunzTarPerm extractEntry build/test-suffix.js
+173 silly gunzTarPerm extractEntry build/prefix-source-map.jsm
+174 silly gunzTarPerm extractEntry build/prefix-utils.jsm
+175 silly gunzTarPerm extractEntry build/suffix-source-map.jsm
+176 silly gunzTarPerm extractEntry build/suffix-utils.jsm
+177 silly gunzTarPerm extractEntry lib/source-map.js
+178 silly gunzTarPerm extractEntry lib/source-map/array-set.js
+179 silly gunzTarPerm extractEntry lib/source-map/base64-vlq.js
+180 silly gunzTarPerm extractEntry lib/source-map/base64.js
+181 silly gunzTarPerm extractEntry lib/source-map/binary-search.js
+182 silly gunzTarPerm extractEntry lib/source-map/source-map-consumer.js
+183 silly gunzTarPerm extractEntry lib/source-map/source-map-generator.js
+184 silly gunzTarPerm extractEntry lib/source-map/source-node.js
+185 silly gunzTarPerm extractEntry lib/source-map/util.js
+186 silly gunzTarPerm extractEntry .travis.yml
+187 silly gunzTarPerm extractEntry test/run-tests.js
+188 silly gunzTarPerm extractEntry test/source-map/test-api.js
+189 silly gunzTarPerm extractEntry test/source-map/test-base64-vlq.js
+190 silly gunzTarPerm extractEntry test/source-map/test-base64.js
+191 silly gunzTarPerm extractEntry test/source-map/test-binary-search.js
+192 silly gunzTarPerm extractEntry test/source-map/test-array-set.js
+193 silly gunzTarPerm extractEntry test/source-map/test-source-map-consumer.js
+194 silly gunzTarPerm extractEntry test/source-map/test-source-map-generator.js
+195 silly gunzTarPerm extractEntry test/source-map/test-source-node.js
+196 silly gunzTarPerm extractEntry test/source-map/test-util.js
+197 silly gunzTarPerm extractEntry test/source-map/util.js
+198 silly gunzTarPerm extractEntry test/source-map/test-dog-fooding.js
+199 silly lockFile 99c6da2d-b-concat-node-modules-source-map tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/source-map
+200 silly lockFile 99c6da2d-b-concat-node-modules-source-map tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/source-map
+201 silly lockFile d9d6ce29-pm-source-map-0-1-39-package-tgz tar:///Users/danielrodrigues/.npm/source-map/0.1.39/package.tgz
+202 silly lockFile d9d6ce29-pm-source-map-0-1-39-package-tgz tar:///Users/danielrodrigues/.npm/source-map/0.1.39/package.tgz
+203 silly lockFile 1367c495-ontrib-concat-node-modules-chalk tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk
+204 silly lockFile 1367c495-ontrib-concat-node-modules-chalk tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk
+205 silly lockFile 7331f9df-gues-npm-chalk-0-5-1-package-tgz tar:///Users/danielrodrigues/.npm/chalk/0.5.1/package.tgz
+206 silly lockFile 7331f9df-gues-npm-chalk-0-5-1-package-tgz tar:///Users/danielrodrigues/.npm/chalk/0.5.1/package.tgz
+207 info preinstall source-map@0.1.39
+208 info preinstall chalk@0.5.1
+209 verbose readDependencies using package.json deps
+210 verbose readDependencies using package.json deps
+211 verbose readDependencies using package.json deps
+212 verbose readDependencies using package.json deps
+213 verbose cache add [ 'amdefine@>=0.0.4', null ]
+214 verbose cache add spec="amdefine@>=0.0.4" args=["amdefine@>=0.0.4",null]
+215 verbose cache add [ 'ansi-styles@^1.1.0', null ]
+216 verbose cache add spec="ansi-styles@^1.1.0" args=["ansi-styles@^1.1.0",null]
+217 verbose cache add [ 'escape-string-regexp@^1.0.0', null ]
+218 verbose cache add spec="escape-string-regexp@^1.0.0" args=["escape-string-regexp@^1.0.0",null]
+219 verbose cache add [ 'has-ansi@^0.1.0', null ]
+220 verbose cache add spec="has-ansi@^0.1.0" args=["has-ansi@^0.1.0",null]
+221 verbose parsed spec { raw: 'amdefine@>=0.0.4',
+221 verbose parsed spec   scope: null,
+221 verbose parsed spec   name: 'amdefine',
+221 verbose parsed spec   rawSpec: '>=0.0.4',
+221 verbose parsed spec   spec: '>=0.0.4',
+221 verbose parsed spec   type: 'range' }
+222 verbose addNamed [ 'amdefine', '>=0.0.4' ]
+223 verbose addNamed [ null, '>=0.0.4' ]
+224 silly lockFile 165d2d7b-amdefine-0-0-4 amdefine@>=0.0.4
+225 verbose lock amdefine@>=0.0.4 /Users/danielrodrigues/.npm/165d2d7b-amdefine-0-0-4.lock
+226 verbose parsed spec { raw: 'ansi-styles@^1.1.0',
+226 verbose parsed spec   scope: null,
+226 verbose parsed spec   name: 'ansi-styles',
+226 verbose parsed spec   rawSpec: '^1.1.0',
+226 verbose parsed spec   spec: '>=1.1.0-0 <2.0.0-0',
+226 verbose parsed spec   type: 'range' }
+227 verbose addNamed [ 'ansi-styles', '>=1.1.0-0 <2.0.0-0' ]
+228 verbose addNamed [ null, '>=1.1.0-0 <2.0.0-0' ]
+229 silly lockFile 276ab7b3-ansi-styles-1-1-0-0-2-0-0-0 ansi-styles@>=1.1.0-0 <2.0.0-0
+230 verbose lock ansi-styles@>=1.1.0-0 <2.0.0-0 /Users/danielrodrigues/.npm/276ab7b3-ansi-styles-1-1-0-0-2-0-0-0.lock
+231 verbose parsed spec { raw: 'escape-string-regexp@^1.0.0',
+231 verbose parsed spec   scope: null,
+231 verbose parsed spec   name: 'escape-string-regexp',
+231 verbose parsed spec   rawSpec: '^1.0.0',
+231 verbose parsed spec   spec: '>=1.0.0-0 <2.0.0-0',
+231 verbose parsed spec   type: 'range' }
+232 verbose addNamed [ 'escape-string-regexp', '>=1.0.0-0 <2.0.0-0' ]
+233 verbose addNamed [ null, '>=1.0.0-0 <2.0.0-0' ]
+234 silly lockFile 9b643b6d-pe-string-regexp-1-0-0-0-2-0-0-0 escape-string-regexp@>=1.0.0-0 <2.0.0-0
+235 verbose lock escape-string-regexp@>=1.0.0-0 <2.0.0-0 /Users/danielrodrigues/.npm/9b643b6d-pe-string-regexp-1-0-0-0-2-0-0-0.lock
+236 verbose cache add [ 'strip-ansi@^0.3.0', null ]
+237 verbose cache add spec="strip-ansi@^0.3.0" args=["strip-ansi@^0.3.0",null]
+238 verbose cache add [ 'supports-color@^0.2.0', null ]
+239 verbose cache add spec="supports-color@^0.2.0" args=["supports-color@^0.2.0",null]
+240 verbose parsed spec { raw: 'has-ansi@^0.1.0',
+240 verbose parsed spec   scope: null,
+240 verbose parsed spec   name: 'has-ansi',
+240 verbose parsed spec   rawSpec: '^0.1.0',
+240 verbose parsed spec   spec: '0.1.0',
+240 verbose parsed spec   type: 'range' }
+241 verbose addNamed [ 'has-ansi', '0.1.0' ]
+242 verbose addNamed [ '0.1.0', '0.1.0' ]
+243 silly lockFile dfbb87ff-has-ansi-0-1-0 has-ansi@0.1.0
+244 verbose lock has-ansi@0.1.0 /Users/danielrodrigues/.npm/dfbb87ff-has-ansi-0-1-0.lock
+245 verbose parsed spec { raw: 'strip-ansi@^0.3.0',
+245 verbose parsed spec   scope: null,
+245 verbose parsed spec   name: 'strip-ansi',
+245 verbose parsed spec   rawSpec: '^0.3.0',
+245 verbose parsed spec   spec: '0.3.0',
+245 verbose parsed spec   type: 'range' }
+246 verbose addNamed [ 'strip-ansi', '0.3.0' ]
+247 verbose addNamed [ '0.3.0', '0.3.0' ]
+248 silly lockFile 9d6f190c-strip-ansi-0-3-0 strip-ansi@0.3.0
+249 verbose lock strip-ansi@0.3.0 /Users/danielrodrigues/.npm/9d6f190c-strip-ansi-0-3-0.lock
+250 verbose parsed spec { raw: 'supports-color@^0.2.0',
+250 verbose parsed spec   scope: null,
+250 verbose parsed spec   name: 'supports-color',
+250 verbose parsed spec   rawSpec: '^0.2.0',
+250 verbose parsed spec   spec: '0.2.0',
+250 verbose parsed spec   type: 'range' }
+251 verbose addNamed [ 'supports-color', '0.2.0' ]
+252 verbose addNamed [ '0.2.0', '0.2.0' ]
+253 silly lockFile bafa6883-supports-color-0-2-0 supports-color@0.2.0
+254 verbose lock supports-color@0.2.0 /Users/danielrodrigues/.npm/bafa6883-supports-color-0-2-0.lock
+255 silly addNameRange { name: 'amdefine', range: '>=0.0.4', hasData: false }
+256 verbose mapToRegistry name amdefine
+257 verbose mapToRegistry uri https://registry.npmjs.org/amdefine
+258 silly addNameRange { name: 'ansi-styles',
+258 silly addNameRange   range: '>=1.1.0-0 <2.0.0-0',
+258 silly addNameRange   hasData: false }
+259 verbose mapToRegistry name ansi-styles
+260 verbose mapToRegistry uri https://registry.npmjs.org/ansi-styles
+261 silly addNameRange { name: 'escape-string-regexp',
+261 silly addNameRange   range: '>=1.0.0-0 <2.0.0-0',
+261 silly addNameRange   hasData: false }
+262 verbose mapToRegistry name escape-string-regexp
+263 verbose mapToRegistry uri https://registry.npmjs.org/escape-string-regexp
+264 verbose mapToRegistry name has-ansi
+265 verbose mapToRegistry uri https://registry.npmjs.org/has-ansi
+266 verbose mapToRegistry name strip-ansi
+267 verbose mapToRegistry uri https://registry.npmjs.org/strip-ansi
+268 verbose mapToRegistry name supports-color
+269 verbose mapToRegistry uri https://registry.npmjs.org/supports-color
+270 verbose request on initialization, where is /amdefine
+271 verbose request after pass 1, where is /amdefine
+272 verbose request url raw /amdefine
+273 verbose request resolving registry [ 'https://registry.npmjs.org/', './amdefine' ]
+274 verbose request after pass 2, where is https://registry.npmjs.org/amdefine
+275 verbose request no auth needed
+276 info retrier registry request attempt 1 at 00:11:17
+277 verbose etag "8HKYVFMA74F1ZOF5PI07S4URB"
+278 http request GET https://registry.npmjs.org/amdefine
+279 verbose request on initialization, where is /ansi-styles
+280 verbose request after pass 1, where is /ansi-styles
+281 verbose request url raw /ansi-styles
+282 verbose request resolving registry [ 'https://registry.npmjs.org/', './ansi-styles' ]
+283 verbose request after pass 2, where is https://registry.npmjs.org/ansi-styles
+284 verbose request no auth needed
+285 info retrier registry request attempt 1 at 00:11:17
+286 verbose etag "89BTWDCZ6UUTTX6GL9L0IKRTG"
+287 http request GET https://registry.npmjs.org/ansi-styles
+288 verbose request on initialization, where is /escape-string-regexp
+289 verbose request after pass 1, where is /escape-string-regexp
+290 verbose request url raw /escape-string-regexp
+291 verbose request resolving registry [ 'https://registry.npmjs.org/', './escape-string-regexp' ]
+292 verbose request after pass 2, where is https://registry.npmjs.org/escape-string-regexp
+293 verbose request no auth needed
+294 info retrier registry request attempt 1 at 00:11:17
+295 verbose etag "EMIN7LOE22KESR5DOWJRB8ACW"
+296 http request GET https://registry.npmjs.org/escape-string-regexp
+297 verbose request on initialization, where is /has-ansi
+298 verbose request after pass 1, where is /has-ansi
+299 verbose request url raw /has-ansi
+300 verbose request resolving registry [ 'https://registry.npmjs.org/', './has-ansi' ]
+301 verbose request after pass 2, where is https://registry.npmjs.org/has-ansi
+302 verbose request no auth needed
+303 info retrier registry request attempt 1 at 00:11:17
+304 verbose etag "2I8RDBNDGLCZT732CCHKVJUKJ"
+305 http request GET https://registry.npmjs.org/has-ansi
+306 verbose request on initialization, where is /strip-ansi
+307 verbose request after pass 1, where is /strip-ansi
+308 verbose request url raw /strip-ansi
+309 verbose request resolving registry [ 'https://registry.npmjs.org/', './strip-ansi' ]
+310 verbose request after pass 2, where is https://registry.npmjs.org/strip-ansi
+311 verbose request no auth needed
+312 info retrier registry request attempt 1 at 00:11:17
+313 verbose etag "75LHXYTAYHSVGUDAKW4Q6NTZR"
+314 http request GET https://registry.npmjs.org/strip-ansi
+315 verbose request on initialization, where is /supports-color
+316 verbose request after pass 1, where is /supports-color
+317 verbose request url raw /supports-color
+318 verbose request resolving registry [ 'https://registry.npmjs.org/', './supports-color' ]
+319 verbose request after pass 2, where is https://registry.npmjs.org/supports-color
+320 verbose request no auth needed
+321 info retrier registry request attempt 1 at 00:11:17
+322 verbose etag "1MM1J77ID5VCTH4K3PHOT4XZI"
+323 http request GET https://registry.npmjs.org/supports-color
+324 http 304 https://registry.npmjs.org/amdefine
+325 silly registry.get cb [ 304,
+325 silly registry.get   { date: 'Thu, 25 Sep 2014 03:11:17 GMT',
+325 silly registry.get     server: 'Apache',
+325 silly registry.get     via: '1.1 varnish',
+325 silly registry.get     'last-modified': 'Thu, 25 Sep 2014 03:11:17 GMT',
+325 silly registry.get     'cache-control': 'max-age=60',
+325 silly registry.get     etag: '"8HKYVFMA74F1ZOF5PI07S4URB"',
+325 silly registry.get     'x-served-by': 'cache-iad2135-IAD',
+325 silly registry.get     'x-cache': 'HIT',
+325 silly registry.get     'x-cache-hits': '1',
+325 silly registry.get     'x-timer': 'S1411614677.956680,VS0,VE0',
+325 silly registry.get     vary: 'Accept',
+325 silly registry.get     'content-length': '0',
+325 silly registry.get     'keep-alive': 'timeout=10, max=50',
+325 silly registry.get     connection: 'Keep-Alive' } ]
+326 verbose etag https://registry.npmjs.org/amdefine from cache
+327 silly addNameRange number 2 { name: 'amdefine', range: '>=0.0.4', hasData: true }
+328 silly addNameRange versions [ 'amdefine',
+328 silly addNameRange   [ '0.0.1',
+328 silly addNameRange     '0.0.2',
+328 silly addNameRange     '0.0.3',
+328 silly addNameRange     '0.0.4',
+328 silly addNameRange     '0.0.5',
+328 silly addNameRange     '0.0.6',
+328 silly addNameRange     '0.0.7',
+328 silly addNameRange     '0.0.8',
+328 silly addNameRange     '0.1.0' ] ]
+329 verbose addNamed [ 'amdefine', '0.1.0' ]
+330 verbose addNamed [ '0.1.0', '0.1.0' ]
+331 silly lockFile 3c57e17c-amdefine-0-1-0 amdefine@0.1.0
+332 verbose lock amdefine@0.1.0 /Users/danielrodrigues/.npm/3c57e17c-amdefine-0-1-0.lock
+333 http 304 https://registry.npmjs.org/strip-ansi
+334 silly registry.get cb [ 304,
+334 silly registry.get   { date: 'Thu, 25 Sep 2014 03:11:17 GMT',
+334 silly registry.get     server: 'Apache',
+334 silly registry.get     via: '1.1 varnish',
+334 silly registry.get     'last-modified': 'Thu, 25 Sep 2014 03:11:17 GMT',
+334 silly registry.get     'cache-control': 'max-age=60',
+334 silly registry.get     etag: '"75LHXYTAYHSVGUDAKW4Q6NTZR"',
+334 silly registry.get     'x-served-by': 'cache-iad2120-IAD',
+334 silly registry.get     'x-cache': 'HIT',
+334 silly registry.get     'x-cache-hits': '1',
+334 silly registry.get     'x-timer': 'S1411614677.959837,VS0,VE0',
+334 silly registry.get     vary: 'Accept',
+334 silly registry.get     'content-length': '0',
+334 silly registry.get     'keep-alive': 'timeout=10, max=50',
+334 silly registry.get     connection: 'Keep-Alive' } ]
+335 verbose etag https://registry.npmjs.org/strip-ansi from cache
+336 http 304 https://registry.npmjs.org/ansi-styles
+337 silly registry.get cb [ 304,
+337 silly registry.get   { date: 'Thu, 25 Sep 2014 03:11:17 GMT',
+337 silly registry.get     server: 'Apache',
+337 silly registry.get     via: '1.1 varnish',
+337 silly registry.get     'last-modified': 'Thu, 25 Sep 2014 03:10:46 GMT',
+337 silly registry.get     'cache-control': 'max-age=60',
+337 silly registry.get     etag: '"89BTWDCZ6UUTTX6GL9L0IKRTG"',
+337 silly registry.get     'x-served-by': 'cache-iad2134-IAD',
+337 silly registry.get     'x-cache': 'HIT',
+337 silly registry.get     'x-cache-hits': '3',
+337 silly registry.get     'x-timer': 'S1411614677.965463,VS0,VE0',
+337 silly registry.get     vary: 'Accept',
+337 silly registry.get     'content-length': '0',
+337 silly registry.get     'keep-alive': 'timeout=10, max=50',
+337 silly registry.get     connection: 'Keep-Alive' } ]
+338 verbose etag https://registry.npmjs.org/ansi-styles from cache
+339 http 304 https://registry.npmjs.org/escape-string-regexp
+340 silly registry.get cb [ 304,
+340 silly registry.get   { date: 'Thu, 25 Sep 2014 03:11:17 GMT',
+340 silly registry.get     server: 'Apache',
+340 silly registry.get     via: '1.1 varnish',
+340 silly registry.get     'last-modified': 'Thu, 25 Sep 2014 02:34:52 GMT',
+340 silly registry.get     'cache-control': 'max-age=60',
+340 silly registry.get     etag: '"EMIN7LOE22KESR5DOWJRB8ACW"',
+340 silly registry.get     'x-served-by': 'cache-iad2130-IAD',
+340 silly registry.get     'x-cache': 'HIT',
+340 silly registry.get     'x-cache-hits': '203',
+340 silly registry.get     'x-timer': 'S1411614677.964542,VS0,VE0',
+340 silly registry.get     vary: 'Accept',
+340 silly registry.get     'content-length': '0',
+340 silly registry.get     'keep-alive': 'timeout=10, max=50',
+340 silly registry.get     connection: 'Keep-Alive' } ]
+341 verbose etag https://registry.npmjs.org/escape-string-regexp from cache
+342 http 304 https://registry.npmjs.org/has-ansi
+343 silly registry.get cb [ 304,
+343 silly registry.get   { date: 'Thu, 25 Sep 2014 03:11:17 GMT',
+343 silly registry.get     server: 'Apache',
+343 silly registry.get     via: '1.1 varnish',
+343 silly registry.get     'last-modified': 'Thu, 25 Sep 2014 03:11:17 GMT',
+343 silly registry.get     'cache-control': 'max-age=60',
+343 silly registry.get     etag: '"2I8RDBNDGLCZT732CCHKVJUKJ"',
+343 silly registry.get     'x-served-by': 'cache-iad2125-IAD',
+343 silly registry.get     'x-cache': 'HIT',
+343 silly registry.get     'x-cache-hits': '1',
+343 silly registry.get     'x-timer': 'S1411614677.968738,VS0,VE0',
+343 silly registry.get     vary: 'Accept',
+343 silly registry.get     'content-length': '0',
+343 silly registry.get     'keep-alive': 'timeout=10, max=50',
+343 silly registry.get     connection: 'Keep-Alive' } ]
+344 verbose etag https://registry.npmjs.org/has-ansi from cache
+345 silly lockFile 3c57e17c-amdefine-0-1-0 amdefine@0.1.0
+346 silly lockFile 3c57e17c-amdefine-0-1-0 amdefine@0.1.0
+347 silly addNameRange number 2 { name: 'ansi-styles',
+347 silly addNameRange   range: '>=1.1.0-0 <2.0.0-0',
+347 silly addNameRange   hasData: true }
+348 silly addNameRange versions [ 'ansi-styles',
+348 silly addNameRange   [ '0.1.0', '0.1.1', '0.1.2', '0.2.0', '1.0.0', '1.1.0' ] ]
+349 verbose addNamed [ 'ansi-styles', '1.1.0' ]
+350 verbose addNamed [ '1.1.0', '1.1.0' ]
+351 silly lockFile a78e767e-ansi-styles-1-1-0 ansi-styles@1.1.0
+352 verbose lock ansi-styles@1.1.0 /Users/danielrodrigues/.npm/a78e767e-ansi-styles-1-1-0.lock
+353 silly lockFile 165d2d7b-amdefine-0-0-4 amdefine@>=0.0.4
+354 silly lockFile 165d2d7b-amdefine-0-0-4 amdefine@>=0.0.4
+355 silly addNameRange number 2 { name: 'escape-string-regexp',
+355 silly addNameRange   range: '>=1.0.0-0 <2.0.0-0',
+355 silly addNameRange   hasData: true }
+356 silly addNameRange versions [ 'escape-string-regexp', [ '1.0.0', '1.0.1', '1.0.2' ] ]
+357 verbose addNamed [ 'escape-string-regexp', '1.0.2' ]
+358 verbose addNamed [ '1.0.2', '1.0.2' ]
+359 silly lockFile 963ee3e8-escape-string-regexp-1-0-2 escape-string-regexp@1.0.2
+360 verbose lock escape-string-regexp@1.0.2 /Users/danielrodrigues/.npm/963ee3e8-escape-string-regexp-1-0-2.lock
+361 silly lockFile 9d6f190c-strip-ansi-0-3-0 strip-ansi@0.3.0
+362 silly lockFile 9d6f190c-strip-ansi-0-3-0 strip-ansi@0.3.0
+363 silly resolved [ { name: 'amdefine',
+363 silly resolved     description: 'Provide AMD\'s define() API for declaring modules in the AMD format',
+363 silly resolved     version: '0.1.0',
+363 silly resolved     homepage: 'http://github.com/jrburke/amdefine',
+363 silly resolved     author:
+363 silly resolved      { name: 'James Burke',
+363 silly resolved        email: 'jrburke@gmail.com',
+363 silly resolved        url: 'http://github.com/jrburke' },
+363 silly resolved     licenses: [ [Object], [Object] ],
+363 silly resolved     repository: { type: 'git', url: 'https://github.com/jrburke/amdefine.git' },
+363 silly resolved     main: './amdefine.js',
+363 silly resolved     engines: { node: '>=0.4.2' },
+363 silly resolved     readme: '# amdefine\n\nA module that can be used to implement AMD\'s define() in Node. This allows you\nto code to the AMD API and have the module work in node programs without\nrequiring those other programs to use AMD.\n\n## Usage\n\n**1)** Update your package.json to indicate amdefine as a dependency:\n\n```javascript\n    "dependencies": {\n        "amdefine": ">=0.1.0"\n    }\n```\n\nThen run `npm install` to get amdefine into your project.\n\n**2)** At the top of each module that uses define(), place this code:\n\n```javascript\nif (typeof define !== \'function\') { var define = require(\'amdefine\')(module) }\n```\n\n**Only use these snippets** when loading amdefine. If you preserve the basic structure,\nwith the braces, it will be stripped out when using the [RequireJS optimizer](#optimizer).\n\nYou can add spaces, line breaks and even require amdefine with a local path, but\nkeep the rest of the structure to get the stripping behavior.\n\nAs you may know, because `if` statements in JavaScript don\'t have their own scope, the var\ndeclaration in the above snippet is made whether the `if` expression is truthy or not. If\nRequireJS is loaded then the declaration is superfluous because `define` is already already\ndeclared in the same scope in RequireJS. Fortunately JavaScript handles multiple `var`\ndeclarations of the same variable in the same scope gracefully.\n\nIf you want to deliver amdefine.js with your code rather than specifying it as a dependency\nwith npm, then just download the latest release and refer to it using a relative path:\n\n[Latest Version](https://github.com/jrburke/amdefine/raw/latest/amdefine.js)\n\n### amdefine/intercept\n\nConsider this very experimental.\n\nInstead of pasting the piece of text for the amdefine setup of a `define`\nvariable in each module you create or consume, you can use `amdefine/intercept`\ninstead. It will automatically insert the above snippet in each .js file loaded\nby Node.\n\n**Warning**: you should only use this if you are creating an application that\nis consuming AMD style defined()\'d modules that are distributed via npm and want\nto run that code in Node.\n\nFor library code where you are not sure if it will be used by others in Node or\nin the browser, then explicitly depending on amdefine and placing the code\nsnippet above is suggested path, instead of using `amdefine/intercept`. The\nintercept module affects all .js files loaded in the Node app, and it is\ninconsiderate to modify global state like that unless you are also controlling\nthe top level app.\n\n#### Why distribute AMD-style nodes via npm?\n\nnpm has a lot of weaknesses for front-end use (installed layout is not great,\nshould have better support for the `baseUrl + moduleID + \'.js\' style of loading,\nsingle file JS installs), but some people want a JS package manager and are\nwilling to live with those constraints. If that is you, but still want to author\nin AMD style modules to get dynamic require([]), better direct source usage and\npowerful loader plugin support in the browser, then this tool can help.\n\n#### amdefine/intercept usage\n\nJust require it in your top level app module (for example index.js, server.js):\n\n```javascript\nrequire(\'amdefine/intercept\');\n```\n\nThe module does not return a value, so no need to assign the result to a local\nvariable.\n\nThen just require() code as you normally would with Node\'s require(). Any .js\nloaded after the intercept require will have the amdefine check injected in\nthe .js source as it is loaded. It does not modify the source on disk, just\nprepends some content to the text of the module as it is loaded by Node.\n\n#### How amdefine/intercept works\n\nIt overrides the `Module._extensions[\'.js\']` in Node to automatically prepend\nthe amdefine snippet above. So, it will affect any .js file loaded by your\napp.\n\n## define() usage\n\nIt is best if you use the anonymous forms of define() in your module:\n\n```javascript\ndefine(function (require) {\n    var dependency = require(\'dependency\');\n});\n```\n\nor\n\n```javascript\ndefine([\'dependency\'], function (dependency) {\n\n});\n```\n\n## RequireJS optimizer integration. <a name="optimizer"></name>\n\nVersion 1.0.3 of the [RequireJS optimizer](http://requirejs.org/docs/optimization.html)\nwill have support for stripping the `if (typeof define !== \'function\')` check\nmentioned above, so you can include this snippet for code that runs in the\nbrowser, but avoid taking the cost of the if() statement once the code is\noptimized for deployment.\n\n## Node 0.4 Support\n\nIf you want to support Node 0.4, then add `require` as the second parameter to amdefine:\n\n```javascript\n//Only if you want Node 0.4. If using 0.5 or later, use the above snippet.\nif (typeof define !== \'function\') { var define = require(\'amdefine\')(module, require) }\n```\n\n## Limitations\n\n### Synchronous vs Asynchronous\n\namdefine creates a define() function that is callable by your code. It will\nexecute and trace dependencies and call the factory function *synchronously*,\nto keep the behavior in line with Node\'s synchronous dependency tracing.\n\nThe exception: calling AMD\'s callback-style require() from inside a factory\nfunction. The require callback is called on process.nextTick():\n\n```javascript\ndefine(function (require) {\n    require([\'a\'], function(a) {\n        //\'a\' is loaded synchronously, but\n        //this callback is called on process.nextTick().\n    });\n});\n```\n\n### Loader Plugins\n\nLoader plugins are supported as long as they call their load() callbacks\nsynchronously. So ones that do network requests will not work. However plugins\nlike [text](http://requirejs.org/docs/api.html#text) can load text files locally.\n\nThe plugin API\'s `load.fromText()` is **not supported** in amdefine, so this means\ntranspiler plugins like the [CoffeeScript loader plugin](https://github.com/jrburke/require-cs)\nwill not work. This may be fixable, but it is a bit complex, and I do not have\nenough node-fu to figure it out yet. See the source for amdefine.js if you want\nto get an idea of the issues involved.\n\n## Tests\n\nTo run the tests, cd to **tests** and run:\n\n```\nnode all.js\nnode all-intercept.js\n```\n\n## License\n\nNew BSD and MIT. Check the LICENSE file for all the details.\n',
+363 silly resolved     readmeFilename: 'README.md',
+363 silly resolved     bugs: { url: 'https://github.com/jrburke/amdefine/issues' },
+363 silly resolved     _id: 'amdefine@0.1.0',
+363 silly resolved     dist:
+363 silly resolved      { shasum: '3ca9735cf1dde0edf7a4bf6641709c8024f9b227',
+363 silly resolved        tarball: 'http://registry.npmjs.org/amdefine/-/amdefine-0.1.0.tgz' },
+363 silly resolved     _from: 'amdefine@>=0.0.4',
+363 silly resolved     _npmVersion: '1.3.8',
+363 silly resolved     _npmUser: { name: 'jrburke', email: 'jrburke@gmail.com' },
+363 silly resolved     maintainers: [ [Object] ],
+363 silly resolved     directories: {},
+363 silly resolved     _shasum: '3ca9735cf1dde0edf7a4bf6641709c8024f9b227',
+363 silly resolved     _resolved: 'https://registry.npmjs.org/amdefine/-/amdefine-0.1.0.tgz' } ]
+364 info install amdefine@0.1.0 into /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/source-map
+365 info installOne amdefine@0.1.0
+366 verbose node_modules/grunt-contrib-concat/node_modules/source-map/node_modules/amdefine unbuild
+367 silly lockFile a78e767e-ansi-styles-1-1-0 ansi-styles@1.1.0
+368 silly lockFile a78e767e-ansi-styles-1-1-0 ansi-styles@1.1.0
+369 silly lockFile dfbb87ff-has-ansi-0-1-0 has-ansi@0.1.0
+370 silly lockFile dfbb87ff-has-ansi-0-1-0 has-ansi@0.1.0
+371 verbose gentlyRm vacuuming /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/source-map/node_modules/amdefine
+372 silly lockFile 276ab7b3-ansi-styles-1-1-0-0-2-0-0-0 ansi-styles@>=1.1.0-0 <2.0.0-0
+373 silly lockFile 276ab7b3-ansi-styles-1-1-0-0-2-0-0-0 ansi-styles@>=1.1.0-0 <2.0.0-0
+374 silly lockFile 963ee3e8-escape-string-regexp-1-0-2 escape-string-regexp@1.0.2
+375 silly lockFile 963ee3e8-escape-string-regexp-1-0-2 escape-string-regexp@1.0.2
+376 verbose tar unpack /Users/danielrodrigues/.npm/amdefine/0.1.0/package.tgz
+377 silly lockFile fdaf726a-source-map-node-modules-amdefine tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/source-map/node_modules/amdefine
+378 verbose lock tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/source-map/node_modules/amdefine /Users/danielrodrigues/.npm/fdaf726a-source-map-node-modules-amdefine.lock
+379 silly lockFile 0852bd3f-s-npm-amdefine-0-1-0-package-tgz tar:///Users/danielrodrigues/.npm/amdefine/0.1.0/package.tgz
+380 verbose lock tar:///Users/danielrodrigues/.npm/amdefine/0.1.0/package.tgz /Users/danielrodrigues/.npm/0852bd3f-s-npm-amdefine-0-1-0-package-tgz.lock
+381 silly lockFile 9b643b6d-pe-string-regexp-1-0-0-0-2-0-0-0 escape-string-regexp@>=1.0.0-0 <2.0.0-0
+382 silly lockFile 9b643b6d-pe-string-regexp-1-0-0-0-2-0-0-0 escape-string-regexp@>=1.0.0-0 <2.0.0-0
+383 verbose gentlyRm vacuuming /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/source-map/node_modules/amdefine
+384 silly gunzTarPerm modes [ '755', '644' ]
+385 silly gunzTarPerm extractEntry package.json
+386 silly gunzTarPerm extractEntry README.md
+387 silly gunzTarPerm extractEntry LICENSE
+388 silly gunzTarPerm extractEntry amdefine.js
+389 silly gunzTarPerm extractEntry intercept.js
+390 silly lockFile fdaf726a-source-map-node-modules-amdefine tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/source-map/node_modules/amdefine
+391 silly lockFile fdaf726a-source-map-node-modules-amdefine tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/source-map/node_modules/amdefine
+392 silly lockFile 0852bd3f-s-npm-amdefine-0-1-0-package-tgz tar:///Users/danielrodrigues/.npm/amdefine/0.1.0/package.tgz
+393 silly lockFile 0852bd3f-s-npm-amdefine-0-1-0-package-tgz tar:///Users/danielrodrigues/.npm/amdefine/0.1.0/package.tgz
+394 info preinstall amdefine@0.1.0
+395 verbose readDependencies using package.json deps
+396 verbose readDependencies using package.json deps
+397 silly resolved []
+398 verbose about to build /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/source-map/node_modules/amdefine
+399 info build /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/source-map/node_modules/amdefine
+400 verbose linkStuff [ false,
+400 verbose linkStuff   false,
+400 verbose linkStuff   false,
+400 verbose linkStuff   '/Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/source-map/node_modules' ]
+401 info linkStuff amdefine@0.1.0
+402 verbose linkBins amdefine@0.1.0
+403 verbose linkMans amdefine@0.1.0
+404 verbose rebuildBundles amdefine@0.1.0
+405 info install amdefine@0.1.0
+406 info postinstall amdefine@0.1.0
+407 verbose about to build /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/source-map
+408 info build /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/source-map
+409 verbose linkStuff [ false,
+409 verbose linkStuff   false,
+409 verbose linkStuff   false,
+409 verbose linkStuff   '/Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules' ]
+410 info linkStuff source-map@0.1.39
+411 verbose linkBins source-map@0.1.39
+412 verbose linkMans source-map@0.1.39
+413 verbose rebuildBundles source-map@0.1.39
+414 verbose rebuildBundles [ 'amdefine' ]
+415 info install source-map@0.1.39
+416 info postinstall source-map@0.1.39
+417 http 304 https://registry.npmjs.org/supports-color
+418 silly registry.get cb [ 304,
+418 silly registry.get   { date: 'Thu, 25 Sep 2014 03:11:18 GMT',
+418 silly registry.get     server: 'Apache',
+418 silly registry.get     via: '1.1 varnish',
+418 silly registry.get     'last-modified': 'Thu, 25 Sep 2014 03:11:18 GMT',
+418 silly registry.get     'cache-control': 'max-age=60',
+418 silly registry.get     etag: '"1MM1J77ID5VCTH4K3PHOT4XZI"',
+418 silly registry.get     'x-served-by': 'cache-iad2135-IAD',
+418 silly registry.get     'x-cache': 'HIT',
+418 silly registry.get     'x-cache-hits': '1',
+418 silly registry.get     'x-timer': 'S1411614678.057357,VS0,VE0',
+418 silly registry.get     vary: 'Accept',
+418 silly registry.get     'content-length': '0',
+418 silly registry.get     'keep-alive': 'timeout=10, max=49',
+418 silly registry.get     connection: 'Keep-Alive' } ]
+419 verbose etag https://registry.npmjs.org/supports-color from cache
+420 silly lockFile bafa6883-supports-color-0-2-0 supports-color@0.2.0
+421 silly lockFile bafa6883-supports-color-0-2-0 supports-color@0.2.0
+422 silly resolved [ { name: 'strip-ansi',
+422 silly resolved     version: '0.3.0',
+422 silly resolved     description: 'Strip ANSI escape codes',
+422 silly resolved     license: 'MIT',
+422 silly resolved     bin: { 'strip-ansi': 'cli.js' },
+422 silly resolved     repository: { type: 'git', url: 'git://github.com/sindresorhus/strip-ansi' },
+422 silly resolved     author:
+422 silly resolved      { name: 'Sindre Sorhus',
+422 silly resolved        email: 'sindresorhus@gmail.com',
+422 silly resolved        url: 'http://sindresorhus.com' },
+422 silly resolved     engines: { node: '>=0.10.0' },
+422 silly resolved     scripts: { test: 'mocha' },
+422 silly resolved     files: [ 'index.js', 'cli.js' ],
+422 silly resolved     keywords:
+422 silly resolved      [ 'strip',
+422 silly resolved        'trim',
+422 silly resolved        'remove',
+422 silly resolved        'ansi',
+422 silly resolved        'styles',
+422 silly resolved        'color',
+422 silly resolved        'colour',
+422 silly resolved        'colors',
+422 silly resolved        'terminal',
+422 silly resolved        'console',
+422 silly resolved        'cli',
+422 silly resolved        'string',
+422 silly resolved        'tty',
+422 silly resolved        'escape',
+422 silly resolved        'formatting',
+422 silly resolved        'rgb',
+422 silly resolved        '256',
+422 silly resolved        'shell',
+422 silly resolved        'xterm',
+422 silly resolved        'log',
+422 silly resolved        'logging',
+422 silly resolved        'command-line',
+422 silly resolved        'text' ],
+422 silly resolved     dependencies: { 'ansi-regex': '^0.2.1' },
+422 silly resolved     devDependencies: { mocha: '*' },
+422 silly resolved     bugs: { url: 'https://github.com/sindresorhus/strip-ansi/issues' },
+422 silly resolved     homepage: 'https://github.com/sindresorhus/strip-ansi',
+422 silly resolved     _id: 'strip-ansi@0.3.0',
+422 silly resolved     _shasum: '25f48ea22ca79187f3174a4db8759347bb126220',
+422 silly resolved     _from: 'strip-ansi@0.3.0',
+422 silly resolved     _npmVersion: '1.4.9',
+422 silly resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+422 silly resolved     maintainers: [ [Object] ],
+422 silly resolved     dist:
+422 silly resolved      { shasum: '25f48ea22ca79187f3174a4db8759347bb126220',
+422 silly resolved        tarball: 'http://registry.npmjs.org/strip-ansi/-/strip-ansi-0.3.0.tgz' },
+422 silly resolved     directories: {},
+422 silly resolved     _resolved: 'https://registry.npmjs.org/strip-ansi/-/strip-ansi-0.3.0.tgz',
+422 silly resolved     readme: 'ERROR: No README data found!' },
+422 silly resolved   { name: 'has-ansi',
+422 silly resolved     version: '0.1.0',
+422 silly resolved     description: 'Check if a string has ANSI escape codes',
+422 silly resolved     license: 'MIT',
+422 silly resolved     repository: { type: 'git', url: 'git://github.com/sindresorhus/has-ansi' },
+422 silly resolved     bin: { 'has-ansi': 'cli.js' },
+422 silly resolved     author:
+422 silly resolved      { name: 'Sindre Sorhus',
+422 silly resolved        email: 'sindresorhus@gmail.com',
+422 silly resolved        url: 'http://sindresorhus.com' },
+422 silly resolved     engines: { node: '>=0.10.0' },
+422 silly resolved     scripts: { test: 'mocha' },
+422 silly resolved     files: [ 'index.js', 'cli.js' ],
+422 silly resolved     keywords:
+422 silly resolved      [ 'cli',
+422 silly resolved        'bin',
+422 silly resolved        'ansi',
+422 silly resolved        'styles',
+422 silly resolved        'color',
+422 silly resolved        'colour',
+422 silly resolved        'colors',
+422 silly resolved        'terminal',
+422 silly resolved        'console',
+422 silly resolved        'string',
+422 silly resolved        'tty',
+422 silly resolved        'escape',
+422 silly resolved        'shell',
+422 silly resolved        'xterm',
+422 silly resolved        'command-line',
+422 silly resolved        'text',
+422 silly resolved        'regex',
+422 silly resolved        'regexp',
+422 silly resolved        're',
+422 silly resolved        'match',
+422 silly resolved        'test',
+422 silly resolved        'find',
+422 silly resolved        'pattern',
+422 silly resolved        'has' ],
+422 silly resolved     dependencies: { 'ansi-regex': '^0.2.0' },
+422 silly resolved     devDependencies: { mocha: '*' },
+422 silly resolved     bugs: { url: 'https://github.com/sindresorhus/has-ansi/issues' },
+422 silly resolved     homepage: 'https://github.com/sindresorhus/has-ansi',
+422 silly resolved     _id: 'has-ansi@0.1.0',
+422 silly resolved     _shasum: '84f265aae8c0e6a88a12d7022894b7568894c62e',
+422 silly resolved     _from: 'has-ansi@0.1.0',
+422 silly resolved     _npmVersion: '1.4.9',
+422 silly resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+422 silly resolved     maintainers: [ [Object] ],
+422 silly resolved     dist:
+422 silly resolved      { shasum: '84f265aae8c0e6a88a12d7022894b7568894c62e',
+422 silly resolved        tarball: 'http://registry.npmjs.org/has-ansi/-/has-ansi-0.1.0.tgz' },
+422 silly resolved     directories: {},
+422 silly resolved     _resolved: 'https://registry.npmjs.org/has-ansi/-/has-ansi-0.1.0.tgz',
+422 silly resolved     readme: 'ERROR: No README data found!' },
+422 silly resolved   { name: 'ansi-styles',
+422 silly resolved     version: '1.1.0',
+422 silly resolved     description: 'ANSI escape codes for styling strings in the terminal',
+422 silly resolved     license: 'MIT',
+422 silly resolved     repository:
+422 silly resolved      { type: 'git',
+422 silly resolved        url: 'git://github.com/sindresorhus/ansi-styles' },
+422 silly resolved     author:
+422 silly resolved      { name: 'Sindre Sorhus',
+422 silly resolved        email: 'sindresorhus@gmail.com',
+422 silly resolved        url: 'http://sindresorhus.com' },
+422 silly resolved     engines: { node: '>=0.10.0' },
+422 silly resolved     scripts: { test: 'mocha' },
+422 silly resolved     files: [ 'index.js' ],
+422 silly resolved     keywords:
+422 silly resolved      [ 'ansi',
+422 silly resolved        'styles',
+422 silly resolved        'color',
+422 silly resolved        'colour',
+422 silly resolved        'colors',
+422 silly resolved        'terminal',
+422 silly resolved        'console',
+422 silly resolved        'cli',
+422 silly resolved        'string',
+422 silly resolved        'tty',
+422 silly resolved        'escape',
+422 silly resolved        'formatting',
+422 silly resolved        'rgb',
+422 silly resolved        '256',
+422 silly resolved        'shell',
+422 silly resolved        'xterm',
+422 silly resolved        'log',
+422 silly resolved        'logging',
+422 silly resolved        'command-line',
+422 silly resolved        'text' ],
+422 silly resolved     devDependencies: { mocha: '*' },
+422 silly resolved     bugs: { url: 'https://github.com/sindresorhus/ansi-styles/issues' },
+422 silly resolved     homepage: 'https://github.com/sindresorhus/ansi-styles',
+422 silly resolved     _id: 'ansi-styles@1.1.0',
+422 silly resolved     _shasum: 'eaecbf66cd706882760b2f4691582b8f55d7a7de',
+422 silly resolved     _from: 'ansi-styles@>=1.1.0-0 <2.0.0-0',
+422 silly resolved     _npmVersion: '1.4.9',
+422 silly resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+422 silly resolved     maintainers: [ [Object] ],
+422 silly resolved     dist:
+422 silly resolved      { shasum: 'eaecbf66cd706882760b2f4691582b8f55d7a7de',
+422 silly resolved        tarball: 'http://registry.npmjs.org/ansi-styles/-/ansi-styles-1.1.0.tgz' },
+422 silly resolved     directories: {},
+422 silly resolved     _resolved: 'https://registry.npmjs.org/ansi-styles/-/ansi-styles-1.1.0.tgz',
+422 silly resolved     readme: 'ERROR: No README data found!' },
+422 silly resolved   { name: 'escape-string-regexp',
+422 silly resolved     version: '1.0.2',
+422 silly resolved     description: 'Escape RegExp special characters',
+422 silly resolved     license: 'MIT',
+422 silly resolved     repository:
+422 silly resolved      { type: 'git',
+422 silly resolved        url: 'https://github.com/sindresorhus/escape-string-regexp' },
+422 silly resolved     author:
+422 silly resolved      { name: 'Sindre Sorhus',
+422 silly resolved        email: 'sindresorhus@gmail.com',
+422 silly resolved        url: 'http://sindresorhus.com' },
+422 silly resolved     engines: { node: '>=0.8.0' },
+422 silly resolved     scripts: { test: 'mocha' },
+422 silly resolved     files: [ 'index.js' ],
+422 silly resolved     keywords:
+422 silly resolved      [ 'regex',
+422 silly resolved        'regexp',
+422 silly resolved        're',
+422 silly resolved        'regular',
+422 silly resolved        'expression',
+422 silly resolved        'escape',
+422 silly resolved        'string',
+422 silly resolved        'str',
+422 silly resolved        'special',
+422 silly resolved        'characters' ],
+422 silly resolved     devDependencies: { mocha: '*' },
+422 silly resolved     gitHead: '0587ee0ee03ea3fcbfa3c15cf67b47f214e20987',
+422 silly resolved     bugs: { url: 'https://github.com/sindresorhus/escape-string-regexp/issues' },
+422 silly resolved     homepage: 'https://github.com/sindresorhus/escape-string-regexp',
+422 silly resolved     _id: 'escape-string-regexp@1.0.2',
+422 silly resolved     _shasum: '4dbc2fe674e71949caf3fb2695ce7f2dc1d9a8d1',
+422 silly resolved     _from: 'escape-string-regexp@>=1.0.0-0 <2.0.0-0',
+422 silly resolved     _npmVersion: '1.4.23',
+422 silly resolved     _npmUser: { name: 'jbnicolai', email: 'jappelman@xebia.com' },
+422 silly resolved     maintainers: [ [Object], [Object] ],
+422 silly resolved     dist:
+422 silly resolved      { shasum: '4dbc2fe674e71949caf3fb2695ce7f2dc1d9a8d1',
+422 silly resolved        tarball: 'http://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-1.0.2.tgz' },
+422 silly resolved     directories: {},
+422 silly resolved     _resolved: 'https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-1.0.2.tgz',
+422 silly resolved     readme: 'ERROR: No README data found!' },
+422 silly resolved   { name: 'supports-color',
+422 silly resolved     version: '0.2.0',
+422 silly resolved     description: 'Detect whether a terminal supports color',
+422 silly resolved     license: 'MIT',
+422 silly resolved     repository:
+422 silly resolved      { type: 'git',
+422 silly resolved        url: 'git://github.com/sindresorhus/supports-color' },
+422 silly resolved     bin: { 'supports-color': 'cli.js' },
+422 silly resolved     author:
+422 silly resolved      { name: 'Sindre Sorhus',
+422 silly resolved        email: 'sindresorhus@gmail.com',
+422 silly resolved        url: 'http://sindresorhus.com' },
+422 silly resolved     engines: { node: '>=0.10.0' },
+422 silly resolved     scripts: { test: 'mocha' },
+422 silly resolved     files: [ 'index.js', 'cli.js' ],
+422 silly resolved     keywords:
+422 silly resolved      [ 'cli',
+422 silly resolved        'bin',
+422 silly resolved        'color',
+422 silly resolved        'colour',
+422 silly resolved        'colors',
+422 silly resolved        'terminal',
+422 silly resolved        'console',
+422 silly resolved        'cli',
+422 silly resolved        'ansi',
+422 silly resolved        'styles',
+422 silly resolved        'tty',
+422 silly resolved        'rgb',
+422 silly resolved        '256',
+422 silly resolved        'shell',
+422 silly resolved        'xterm',
+422 silly resolved        'command-line',
+422 silly resolved        'support',
+422 silly resolved        'supports',
+422 silly resolved        'capability',
+422 silly resolved        'detect' ],
+422 silly resolved     devDependencies: { mocha: '*' },
+422 silly resolved     bugs: { url: 'https://github.com/sindresorhus/supports-color/issues' },
+422 silly resolved     homepage: 'https://github.com/sindresorhus/supports-color',
+422 silly resolved     _id: 'supports-color@0.2.0',
+422 silly resolved     _shasum: 'd92de2694eb3f67323973d7ae3d8b55b4c22190a',
+422 silly resolved     _from: 'supports-color@0.2.0',
+422 silly resolved     _npmVersion: '1.4.9',
+422 silly resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+422 silly resolved     maintainers: [ [Object] ],
+422 silly resolved     dist:
+422 silly resolved      { shasum: 'd92de2694eb3f67323973d7ae3d8b55b4c22190a',
+422 silly resolved        tarball: 'http://registry.npmjs.org/supports-color/-/supports-color-0.2.0.tgz' },
+422 silly resolved     directories: {},
+422 silly resolved     _resolved: 'https://registry.npmjs.org/supports-color/-/supports-color-0.2.0.tgz',
+422 silly resolved     readme: 'ERROR: No README data found!' } ]
+423 info install strip-ansi@0.3.0 into /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk
+424 info install has-ansi@0.1.0 into /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk
+425 info install ansi-styles@1.1.0 into /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk
+426 info install escape-string-regexp@1.0.2 into /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk
+427 info install supports-color@0.2.0 into /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk
+428 info installOne strip-ansi@0.3.0
+429 info installOne has-ansi@0.1.0
+430 info installOne ansi-styles@1.1.0
+431 info installOne escape-string-regexp@1.0.2
+432 info installOne supports-color@0.2.0
+433 verbose node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/strip-ansi unbuild
+434 verbose node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/has-ansi unbuild
+435 verbose node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/ansi-styles unbuild
+436 verbose node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/escape-string-regexp unbuild
+437 verbose node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/supports-color unbuild
+438 verbose gentlyRm vacuuming /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/strip-ansi
+439 verbose gentlyRm vacuuming /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/has-ansi
+440 verbose gentlyRm vacuuming /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/ansi-styles
+441 verbose gentlyRm vacuuming /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/escape-string-regexp
+442 verbose gentlyRm vacuuming /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/supports-color
+443 verbose tar unpack /Users/danielrodrigues/.npm/strip-ansi/0.3.0/package.tgz
+444 silly lockFile 2694d064-es-chalk-node-modules-strip-ansi tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/strip-ansi
+445 verbose lock tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/strip-ansi /Users/danielrodrigues/.npm/2694d064-es-chalk-node-modules-strip-ansi.lock
+446 silly lockFile 47395a29-npm-strip-ansi-0-3-0-package-tgz tar:///Users/danielrodrigues/.npm/strip-ansi/0.3.0/package.tgz
+447 verbose lock tar:///Users/danielrodrigues/.npm/strip-ansi/0.3.0/package.tgz /Users/danielrodrigues/.npm/47395a29-npm-strip-ansi-0-3-0-package-tgz.lock
+448 verbose tar unpack /Users/danielrodrigues/.npm/has-ansi/0.1.0/package.tgz
+449 silly lockFile 431c9490-ules-chalk-node-modules-has-ansi tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/has-ansi
+450 verbose lock tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/has-ansi /Users/danielrodrigues/.npm/431c9490-ules-chalk-node-modules-has-ansi.lock
+451 silly lockFile 59d30e0e-s-npm-has-ansi-0-1-0-package-tgz tar:///Users/danielrodrigues/.npm/has-ansi/0.1.0/package.tgz
+452 verbose lock tar:///Users/danielrodrigues/.npm/has-ansi/0.1.0/package.tgz /Users/danielrodrigues/.npm/59d30e0e-s-npm-has-ansi-0-1-0-package-tgz.lock
+453 verbose tar unpack /Users/danielrodrigues/.npm/ansi-styles/1.1.0/package.tgz
+454 silly lockFile 4aa29c09-s-chalk-node-modules-ansi-styles tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/ansi-styles
+455 verbose lock tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/ansi-styles /Users/danielrodrigues/.npm/4aa29c09-s-chalk-node-modules-ansi-styles.lock
+456 silly lockFile 8c729652-pm-ansi-styles-1-1-0-package-tgz tar:///Users/danielrodrigues/.npm/ansi-styles/1.1.0/package.tgz
+457 verbose lock tar:///Users/danielrodrigues/.npm/ansi-styles/1.1.0/package.tgz /Users/danielrodrigues/.npm/8c729652-pm-ansi-styles-1-1-0-package-tgz.lock
+458 verbose tar unpack /Users/danielrodrigues/.npm/escape-string-regexp/1.0.2/package.tgz
+459 silly lockFile e5548b70-ode-modules-escape-string-regexp tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/escape-string-regexp
+460 verbose lock tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/escape-string-regexp /Users/danielrodrigues/.npm/e5548b70-ode-modules-escape-string-regexp.lock
+461 silly lockFile 0a2bb25c--string-regexp-1-0-2-package-tgz tar:///Users/danielrodrigues/.npm/escape-string-regexp/1.0.2/package.tgz
+462 verbose lock tar:///Users/danielrodrigues/.npm/escape-string-regexp/1.0.2/package.tgz /Users/danielrodrigues/.npm/0a2bb25c--string-regexp-1-0-2-package-tgz.lock
+463 verbose tar unpack /Users/danielrodrigues/.npm/supports-color/0.2.0/package.tgz
+464 silly lockFile bb8c8bd7-halk-node-modules-supports-color tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/supports-color
+465 verbose lock tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/supports-color /Users/danielrodrigues/.npm/bb8c8bd7-halk-node-modules-supports-color.lock
+466 silly lockFile 89e2cb0a-supports-color-0-2-0-package-tgz tar:///Users/danielrodrigues/.npm/supports-color/0.2.0/package.tgz
+467 verbose lock tar:///Users/danielrodrigues/.npm/supports-color/0.2.0/package.tgz /Users/danielrodrigues/.npm/89e2cb0a-supports-color-0-2-0-package-tgz.lock
+468 verbose gentlyRm vacuuming /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/strip-ansi
+469 verbose gentlyRm vacuuming /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/has-ansi
+470 verbose gentlyRm vacuuming /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/ansi-styles
+471 verbose gentlyRm vacuuming /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/escape-string-regexp
+472 verbose gentlyRm vacuuming /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/supports-color
+473 silly gunzTarPerm modes [ '755', '644' ]
+474 silly gunzTarPerm modes [ '755', '644' ]
+475 silly gunzTarPerm modes [ '755', '644' ]
+476 silly gunzTarPerm modes [ '755', '644' ]
+477 silly gunzTarPerm modes [ '755', '644' ]
+478 silly gunzTarPerm extractEntry package.json
+479 silly gunzTarPerm extractEntry package.json
+480 silly gunzTarPerm extractEntry package.json
+481 silly gunzTarPerm extractEntry package.json
+482 silly gunzTarPerm extractEntry package.json
+483 silly gunzTarPerm extractEntry cli.js
+484 silly gunzTarPerm extractEntry index.js
+485 silly gunzTarPerm extractEntry cli.js
+486 silly gunzTarPerm extractEntry index.js
+487 silly gunzTarPerm extractEntry index.js
+488 silly gunzTarPerm extractEntry readme.md
+489 silly gunzTarPerm extractEntry index.js
+490 silly gunzTarPerm extractEntry readme.md
+491 silly gunzTarPerm extractEntry cli.js
+492 silly gunzTarPerm extractEntry index.js
+493 silly gunzTarPerm extractEntry readme.md
+494 silly gunzTarPerm extractEntry readme.md
+495 silly gunzTarPerm extractEntry readme.md
+496 silly lockFile e5548b70-ode-modules-escape-string-regexp tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/escape-string-regexp
+497 silly lockFile e5548b70-ode-modules-escape-string-regexp tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/escape-string-regexp
+498 silly lockFile 0a2bb25c--string-regexp-1-0-2-package-tgz tar:///Users/danielrodrigues/.npm/escape-string-regexp/1.0.2/package.tgz
+499 silly lockFile 0a2bb25c--string-regexp-1-0-2-package-tgz tar:///Users/danielrodrigues/.npm/escape-string-regexp/1.0.2/package.tgz
+500 silly lockFile 4aa29c09-s-chalk-node-modules-ansi-styles tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/ansi-styles
+501 silly lockFile 4aa29c09-s-chalk-node-modules-ansi-styles tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/ansi-styles
+502 silly lockFile 8c729652-pm-ansi-styles-1-1-0-package-tgz tar:///Users/danielrodrigues/.npm/ansi-styles/1.1.0/package.tgz
+503 silly lockFile 8c729652-pm-ansi-styles-1-1-0-package-tgz tar:///Users/danielrodrigues/.npm/ansi-styles/1.1.0/package.tgz
+504 info preinstall escape-string-regexp@1.0.2
+505 info preinstall ansi-styles@1.1.0
+506 verbose readDependencies using package.json deps
+507 verbose readDependencies using package.json deps
+508 silly resolved []
+509 verbose about to build /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/escape-string-regexp
+510 info build /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/escape-string-regexp
+511 verbose linkStuff [ false,
+511 verbose linkStuff   false,
+511 verbose linkStuff   false,
+511 verbose linkStuff   '/Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules' ]
+512 info linkStuff escape-string-regexp@1.0.2
+513 verbose linkBins escape-string-regexp@1.0.2
+514 verbose linkMans escape-string-regexp@1.0.2
+515 verbose rebuildBundles escape-string-regexp@1.0.2
+516 verbose readDependencies using package.json deps
+517 info install escape-string-regexp@1.0.2
+518 silly lockFile 2694d064-es-chalk-node-modules-strip-ansi tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/strip-ansi
+519 silly lockFile 2694d064-es-chalk-node-modules-strip-ansi tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/strip-ansi
+520 verbose readDependencies using package.json deps
+521 silly resolved []
+522 verbose about to build /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/ansi-styles
+523 info build /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/ansi-styles
+524 verbose linkStuff [ false,
+524 verbose linkStuff   false,
+524 verbose linkStuff   false,
+524 verbose linkStuff   '/Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules' ]
+525 info linkStuff ansi-styles@1.1.0
+526 verbose linkBins ansi-styles@1.1.0
+527 verbose linkMans ansi-styles@1.1.0
+528 verbose rebuildBundles ansi-styles@1.1.0
+529 silly lockFile 47395a29-npm-strip-ansi-0-3-0-package-tgz tar:///Users/danielrodrigues/.npm/strip-ansi/0.3.0/package.tgz
+530 silly lockFile 47395a29-npm-strip-ansi-0-3-0-package-tgz tar:///Users/danielrodrigues/.npm/strip-ansi/0.3.0/package.tgz
+531 info install ansi-styles@1.1.0
+532 info postinstall escape-string-regexp@1.0.2
+533 info postinstall ansi-styles@1.1.0
+534 info preinstall strip-ansi@0.3.0
+535 verbose readDependencies using package.json deps
+536 verbose readDependencies using package.json deps
+537 verbose cache add [ 'ansi-regex@^0.2.1', null ]
+538 verbose cache add spec="ansi-regex@^0.2.1" args=["ansi-regex@^0.2.1",null]
+539 verbose parsed spec { raw: 'ansi-regex@^0.2.1',
+539 verbose parsed spec   scope: null,
+539 verbose parsed spec   name: 'ansi-regex',
+539 verbose parsed spec   rawSpec: '^0.2.1',
+539 verbose parsed spec   spec: '0.2.1',
+539 verbose parsed spec   type: 'range' }
+540 verbose addNamed [ 'ansi-regex', '0.2.1' ]
+541 verbose addNamed [ '0.2.1', '0.2.1' ]
+542 silly lockFile 67db7279-ansi-regex-0-2-1 ansi-regex@0.2.1
+543 verbose lock ansi-regex@0.2.1 /Users/danielrodrigues/.npm/67db7279-ansi-regex-0-2-1.lock
+544 verbose mapToRegistry name ansi-regex
+545 verbose mapToRegistry uri https://registry.npmjs.org/ansi-regex
+546 silly lockFile 431c9490-ules-chalk-node-modules-has-ansi tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/has-ansi
+547 silly lockFile 431c9490-ules-chalk-node-modules-has-ansi tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/has-ansi
+548 silly lockFile 59d30e0e-s-npm-has-ansi-0-1-0-package-tgz tar:///Users/danielrodrigues/.npm/has-ansi/0.1.0/package.tgz
+549 silly lockFile 59d30e0e-s-npm-has-ansi-0-1-0-package-tgz tar:///Users/danielrodrigues/.npm/has-ansi/0.1.0/package.tgz
+550 silly lockFile bb8c8bd7-halk-node-modules-supports-color tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/supports-color
+551 silly lockFile bb8c8bd7-halk-node-modules-supports-color tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/supports-color
+552 silly lockFile 89e2cb0a-supports-color-0-2-0-package-tgz tar:///Users/danielrodrigues/.npm/supports-color/0.2.0/package.tgz
+553 silly lockFile 89e2cb0a-supports-color-0-2-0-package-tgz tar:///Users/danielrodrigues/.npm/supports-color/0.2.0/package.tgz
+554 verbose request on initialization, where is /ansi-regex
+555 verbose request after pass 1, where is /ansi-regex
+556 verbose request url raw /ansi-regex
+557 verbose request resolving registry [ 'https://registry.npmjs.org/', './ansi-regex' ]
+558 verbose request after pass 2, where is https://registry.npmjs.org/ansi-regex
+559 verbose request no auth needed
+560 info retrier registry request attempt 1 at 00:11:18
+561 verbose etag "1TB4RGXG7X6L6SJ5IOC34HPO9"
+562 http request GET https://registry.npmjs.org/ansi-regex
+563 info preinstall has-ansi@0.1.0
+564 info preinstall supports-color@0.2.0
+565 verbose readDependencies using package.json deps
+566 verbose readDependencies using package.json deps
+567 verbose readDependencies using package.json deps
+568 verbose readDependencies using package.json deps
+569 silly resolved []
+570 verbose about to build /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/supports-color
+571 info build /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/supports-color
+572 verbose linkStuff [ false,
+572 verbose linkStuff   false,
+572 verbose linkStuff   false,
+572 verbose linkStuff   '/Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules' ]
+573 info linkStuff supports-color@0.2.0
+574 verbose linkBins supports-color@0.2.0
+575 verbose link bins [ { 'supports-color': 'cli.js' },
+575 verbose link bins   '/Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/.bin',
+575 verbose link bins   false ]
+576 verbose linkMans supports-color@0.2.0
+577 verbose rebuildBundles supports-color@0.2.0
+578 verbose cache add [ 'ansi-regex@^0.2.0', null ]
+579 verbose cache add spec="ansi-regex@^0.2.0" args=["ansi-regex@^0.2.0",null]
+580 verbose parsed spec { raw: 'ansi-regex@^0.2.0',
+580 verbose parsed spec   scope: null,
+580 verbose parsed spec   name: 'ansi-regex',
+580 verbose parsed spec   rawSpec: '^0.2.0',
+580 verbose parsed spec   spec: '0.2.0',
+580 verbose parsed spec   type: 'range' }
+581 verbose addNamed [ 'ansi-regex', '0.2.0' ]
+582 verbose addNamed [ '0.2.0', '0.2.0' ]
+583 silly lockFile af72cca2-ansi-regex-0-2-0 ansi-regex@0.2.0
+584 verbose lock ansi-regex@0.2.0 /Users/danielrodrigues/.npm/af72cca2-ansi-regex-0-2-0.lock
+585 verbose gentlyRm vacuuming /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/.bin/supports-color
+586 verbose mapToRegistry name ansi-regex
+587 verbose mapToRegistry uri https://registry.npmjs.org/ansi-regex
+588 info install supports-color@0.2.0
+589 info postinstall supports-color@0.2.0
+590 verbose request on initialization, where is /ansi-regex
+591 verbose request after pass 1, where is /ansi-regex
+592 verbose request url raw /ansi-regex
+593 verbose request resolving registry [ 'https://registry.npmjs.org/', './ansi-regex' ]
+594 verbose request after pass 2, where is https://registry.npmjs.org/ansi-regex
+595 verbose request no auth needed
+596 info retrier registry request attempt 1 at 00:11:18
+597 verbose etag "1TB4RGXG7X6L6SJ5IOC34HPO9"
+598 http request GET https://registry.npmjs.org/ansi-regex
+599 http 304 https://registry.npmjs.org/ansi-regex
+600 silly registry.get cb [ 304,
+600 silly registry.get   { date: 'Thu, 25 Sep 2014 03:11:18 GMT',
+600 silly registry.get     server: 'Apache',
+600 silly registry.get     via: '1.1 varnish',
+600 silly registry.get     'last-modified': 'Thu, 25 Sep 2014 02:38:14 GMT',
+600 silly registry.get     'cache-control': 'max-age=60',
+600 silly registry.get     etag: '"1TB4RGXG7X6L6SJ5IOC34HPO9"',
+600 silly registry.get     'x-served-by': 'cache-iad2123-IAD',
+600 silly registry.get     'x-cache': 'HIT',
+600 silly registry.get     'x-cache-hits': '327',
+600 silly registry.get     'x-timer': 'S1411614678.542988,VS0,VE0',
+600 silly registry.get     vary: 'Accept',
+600 silly registry.get     'content-length': '0',
+600 silly registry.get     'keep-alive': 'timeout=10, max=50',
+600 silly registry.get     connection: 'Keep-Alive' } ]
+601 verbose etag https://registry.npmjs.org/ansi-regex from cache
+602 silly lockFile 67db7279-ansi-regex-0-2-1 ansi-regex@0.2.1
+603 silly lockFile 67db7279-ansi-regex-0-2-1 ansi-regex@0.2.1
+604 silly resolved [ { name: 'ansi-regex',
+604 silly resolved     version: '0.2.1',
+604 silly resolved     description: 'Regular expression for matching ANSI escape codes',
+604 silly resolved     license: 'MIT',
+604 silly resolved     repository: { type: 'git', url: 'git://github.com/sindresorhus/ansi-regex' },
+604 silly resolved     author:
+604 silly resolved      { name: 'Sindre Sorhus',
+604 silly resolved        email: 'sindresorhus@gmail.com',
+604 silly resolved        url: 'http://sindresorhus.com' },
+604 silly resolved     engines: { node: '>=0.10.0' },
+604 silly resolved     scripts: { test: 'mocha' },
+604 silly resolved     files: [ 'index.js' ],
+604 silly resolved     keywords:
+604 silly resolved      [ 'ansi',
+604 silly resolved        'styles',
+604 silly resolved        'color',
+604 silly resolved        'colour',
+604 silly resolved        'colors',
+604 silly resolved        'terminal',
+604 silly resolved        'console',
+604 silly resolved        'cli',
+604 silly resolved        'string',
+604 silly resolved        'tty',
+604 silly resolved        'escape',
+604 silly resolved        'formatting',
+604 silly resolved        'rgb',
+604 silly resolved        '256',
+604 silly resolved        'shell',
+604 silly resolved        'xterm',
+604 silly resolved        'command-line',
+604 silly resolved        'text',
+604 silly resolved        'regex',
+604 silly resolved        'regexp',
+604 silly resolved        're',
+604 silly resolved        'match',
+604 silly resolved        'test',
+604 silly resolved        'find',
+604 silly resolved        'pattern' ],
+604 silly resolved     devDependencies: { mocha: '*' },
+604 silly resolved     bugs: { url: 'https://github.com/sindresorhus/ansi-regex/issues' },
+604 silly resolved     homepage: 'https://github.com/sindresorhus/ansi-regex',
+604 silly resolved     _id: 'ansi-regex@0.2.1',
+604 silly resolved     _shasum: '0d8e946967a3d8143f93e24e298525fc1b2235f9',
+604 silly resolved     _from: 'ansi-regex@0.2.1',
+604 silly resolved     _npmVersion: '1.4.9',
+604 silly resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+604 silly resolved     maintainers: [ [Object] ],
+604 silly resolved     dist:
+604 silly resolved      { shasum: '0d8e946967a3d8143f93e24e298525fc1b2235f9',
+604 silly resolved        tarball: 'http://registry.npmjs.org/ansi-regex/-/ansi-regex-0.2.1.tgz' },
+604 silly resolved     directories: {},
+604 silly resolved     _resolved: 'https://registry.npmjs.org/ansi-regex/-/ansi-regex-0.2.1.tgz',
+604 silly resolved     readme: 'ERROR: No README data found!' } ]
+605 info install ansi-regex@0.2.1 into /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/strip-ansi
+606 info installOne ansi-regex@0.2.1
+607 verbose node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex unbuild
+608 verbose gentlyRm vacuuming /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex
+609 verbose tar unpack /Users/danielrodrigues/.npm/ansi-regex/0.2.1/package.tgz
+610 silly lockFile 628b2515-rip-ansi-node-modules-ansi-regex tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex
+611 verbose lock tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex /Users/danielrodrigues/.npm/628b2515-rip-ansi-node-modules-ansi-regex.lock
+612 silly lockFile 99a0f74a-npm-ansi-regex-0-2-1-package-tgz tar:///Users/danielrodrigues/.npm/ansi-regex/0.2.1/package.tgz
+613 verbose lock tar:///Users/danielrodrigues/.npm/ansi-regex/0.2.1/package.tgz /Users/danielrodrigues/.npm/99a0f74a-npm-ansi-regex-0-2-1-package-tgz.lock
+614 verbose gentlyRm vacuuming /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex
+615 silly gunzTarPerm modes [ '755', '644' ]
+616 silly gunzTarPerm extractEntry package.json
+617 silly gunzTarPerm extractEntry index.js
+618 silly gunzTarPerm extractEntry readme.md
+619 silly lockFile 628b2515-rip-ansi-node-modules-ansi-regex tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex
+620 silly lockFile 628b2515-rip-ansi-node-modules-ansi-regex tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex
+621 silly lockFile 99a0f74a-npm-ansi-regex-0-2-1-package-tgz tar:///Users/danielrodrigues/.npm/ansi-regex/0.2.1/package.tgz
+622 silly lockFile 99a0f74a-npm-ansi-regex-0-2-1-package-tgz tar:///Users/danielrodrigues/.npm/ansi-regex/0.2.1/package.tgz
+623 info preinstall ansi-regex@0.2.1
+624 http 304 https://registry.npmjs.org/ansi-regex
+625 silly registry.get cb [ 304,
+625 silly registry.get   { date: 'Thu, 25 Sep 2014 03:11:18 GMT',
+625 silly registry.get     server: 'Apache',
+625 silly registry.get     via: '1.1 varnish',
+625 silly registry.get     'last-modified': 'Thu, 25 Sep 2014 03:11:18 GMT',
+625 silly registry.get     'cache-control': 'max-age=60',
+625 silly registry.get     etag: '"1TB4RGXG7X6L6SJ5IOC34HPO9"',
+625 silly registry.get     'x-served-by': 'cache-iad2121-IAD',
+625 silly registry.get     'x-cache': 'HIT',
+625 silly registry.get     'x-cache-hits': '1',
+625 silly registry.get     'x-timer': 'S1411614678.562939,VS0,VE0',
+625 silly registry.get     vary: 'Accept',
+625 silly registry.get     'content-length': '0',
+625 silly registry.get     'keep-alive': 'timeout=10, max=50',
+625 silly registry.get     connection: 'Keep-Alive' } ]
+626 verbose etag https://registry.npmjs.org/ansi-regex from cache
+627 verbose readDependencies using package.json deps
+628 verbose readDependencies using package.json deps
+629 silly resolved []
+630 verbose about to build /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex
+631 info build /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex
+632 verbose linkStuff [ false,
+632 verbose linkStuff   false,
+632 verbose linkStuff   false,
+632 verbose linkStuff   '/Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/strip-ansi/node_modules' ]
+633 info linkStuff ansi-regex@0.2.1
+634 verbose linkBins ansi-regex@0.2.1
+635 verbose linkMans ansi-regex@0.2.1
+636 verbose rebuildBundles ansi-regex@0.2.1
+637 info install ansi-regex@0.2.1
+638 info postinstall ansi-regex@0.2.1
+639 verbose about to build /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/strip-ansi
+640 info build /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/strip-ansi
+641 verbose linkStuff [ false,
+641 verbose linkStuff   false,
+641 verbose linkStuff   false,
+641 verbose linkStuff   '/Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules' ]
+642 info linkStuff strip-ansi@0.3.0
+643 verbose linkBins strip-ansi@0.3.0
+644 verbose link bins [ { 'strip-ansi': 'cli.js' },
+644 verbose link bins   '/Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/.bin',
+644 verbose link bins   false ]
+645 verbose linkMans strip-ansi@0.3.0
+646 verbose rebuildBundles strip-ansi@0.3.0
+647 verbose rebuildBundles [ 'ansi-regex' ]
+648 verbose gentlyRm vacuuming /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/.bin/strip-ansi
+649 silly lockFile af72cca2-ansi-regex-0-2-0 ansi-regex@0.2.0
+650 silly lockFile af72cca2-ansi-regex-0-2-0 ansi-regex@0.2.0
+651 info install strip-ansi@0.3.0
+652 info postinstall strip-ansi@0.3.0
+653 silly resolved [ { name: 'ansi-regex',
+653 silly resolved     version: '0.2.0',
+653 silly resolved     description: 'Regular expression for matching ANSI escape codes',
+653 silly resolved     license: 'MIT',
+653 silly resolved     repository: { type: 'git', url: 'git://github.com/sindresorhus/ansi-regex' },
+653 silly resolved     author:
+653 silly resolved      { name: 'Sindre Sorhus',
+653 silly resolved        email: 'sindresorhus@gmail.com',
+653 silly resolved        url: 'http://sindresorhus.com' },
+653 silly resolved     engines: { node: '>=0.10.0' },
+653 silly resolved     scripts: { test: 'mocha' },
+653 silly resolved     files: [ 'index.js' ],
+653 silly resolved     keywords:
+653 silly resolved      [ 'ansi',
+653 silly resolved        'styles',
+653 silly resolved        'color',
+653 silly resolved        'colour',
+653 silly resolved        'colors',
+653 silly resolved        'terminal',
+653 silly resolved        'console',
+653 silly resolved        'cli',
+653 silly resolved        'string',
+653 silly resolved        'tty',
+653 silly resolved        'escape',
+653 silly resolved        'formatting',
+653 silly resolved        'rgb',
+653 silly resolved        '256',
+653 silly resolved        'shell',
+653 silly resolved        'xterm',
+653 silly resolved        'command-line',
+653 silly resolved        'text',
+653 silly resolved        'regex',
+653 silly resolved        'regexp',
+653 silly resolved        're',
+653 silly resolved        'match',
+653 silly resolved        'test',
+653 silly resolved        'find',
+653 silly resolved        'pattern' ],
+653 silly resolved     devDependencies: { mocha: '*' },
+653 silly resolved     bugs: { url: 'https://github.com/sindresorhus/ansi-regex/issues' },
+653 silly resolved     homepage: 'https://github.com/sindresorhus/ansi-regex',
+653 silly resolved     _id: 'ansi-regex@0.2.0',
+653 silly resolved     _shasum: '3c48015ac52bcae430b08b822b87522644eb0de7',
+653 silly resolved     _from: 'ansi-regex@0.2.0',
+653 silly resolved     _npmVersion: '1.4.9',
+653 silly resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+653 silly resolved     maintainers: [ [Object] ],
+653 silly resolved     dist:
+653 silly resolved      { shasum: '3c48015ac52bcae430b08b822b87522644eb0de7',
+653 silly resolved        tarball: 'http://registry.npmjs.org/ansi-regex/-/ansi-regex-0.2.0.tgz' },
+653 silly resolved     directories: {},
+653 silly resolved     _resolved: 'https://registry.npmjs.org/ansi-regex/-/ansi-regex-0.2.0.tgz',
+653 silly resolved     readme: 'ERROR: No README data found!' } ]
+654 info install ansi-regex@0.2.0 into /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/has-ansi
+655 info installOne ansi-regex@0.2.0
+656 verbose node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex unbuild
+657 verbose gentlyRm vacuuming /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex
+658 verbose tar unpack /Users/danielrodrigues/.npm/ansi-regex/0.2.0/package.tgz
+659 silly lockFile f7b837c9-has-ansi-node-modules-ansi-regex tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex
+660 verbose lock tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex /Users/danielrodrigues/.npm/f7b837c9-has-ansi-node-modules-ansi-regex.lock
+661 silly lockFile 3d678e77-npm-ansi-regex-0-2-0-package-tgz tar:///Users/danielrodrigues/.npm/ansi-regex/0.2.0/package.tgz
+662 verbose lock tar:///Users/danielrodrigues/.npm/ansi-regex/0.2.0/package.tgz /Users/danielrodrigues/.npm/3d678e77-npm-ansi-regex-0-2-0-package-tgz.lock
+663 verbose gentlyRm vacuuming /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex
+664 silly gunzTarPerm modes [ '755', '644' ]
+665 silly gunzTarPerm extractEntry package.json
+666 silly gunzTarPerm extractEntry index.js
+667 silly gunzTarPerm extractEntry readme.md
+668 silly lockFile f7b837c9-has-ansi-node-modules-ansi-regex tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex
+669 silly lockFile f7b837c9-has-ansi-node-modules-ansi-regex tar:///Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex
+670 silly lockFile 3d678e77-npm-ansi-regex-0-2-0-package-tgz tar:///Users/danielrodrigues/.npm/ansi-regex/0.2.0/package.tgz
+671 silly lockFile 3d678e77-npm-ansi-regex-0-2-0-package-tgz tar:///Users/danielrodrigues/.npm/ansi-regex/0.2.0/package.tgz
+672 info preinstall ansi-regex@0.2.0
+673 verbose readDependencies using package.json deps
+674 verbose readDependencies using package.json deps
+675 silly resolved []
+676 verbose about to build /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex
+677 info build /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex
+678 verbose linkStuff [ false,
+678 verbose linkStuff   false,
+678 verbose linkStuff   false,
+678 verbose linkStuff   '/Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/has-ansi/node_modules' ]
+679 info linkStuff ansi-regex@0.2.0
+680 verbose linkBins ansi-regex@0.2.0
+681 verbose linkMans ansi-regex@0.2.0
+682 verbose rebuildBundles ansi-regex@0.2.0
+683 info install ansi-regex@0.2.0
+684 info postinstall ansi-regex@0.2.0
+685 verbose about to build /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/has-ansi
+686 info build /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/has-ansi
+687 verbose linkStuff [ false,
+687 verbose linkStuff   false,
+687 verbose linkStuff   false,
+687 verbose linkStuff   '/Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules' ]
+688 info linkStuff has-ansi@0.1.0
+689 verbose linkBins has-ansi@0.1.0
+690 verbose link bins [ { 'has-ansi': 'cli.js' },
+690 verbose link bins   '/Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/.bin',
+690 verbose link bins   false ]
+691 verbose linkMans has-ansi@0.1.0
+692 verbose rebuildBundles has-ansi@0.1.0
+693 verbose rebuildBundles [ 'ansi-regex' ]
+694 verbose gentlyRm vacuuming /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk/node_modules/.bin/has-ansi
+695 info install has-ansi@0.1.0
+696 info postinstall has-ansi@0.1.0
+697 verbose about to build /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk
+698 info build /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules/chalk
+699 verbose linkStuff [ false,
+699 verbose linkStuff   false,
+699 verbose linkStuff   false,
+699 verbose linkStuff   '/Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat/node_modules' ]
+700 info linkStuff chalk@0.5.1
+701 verbose linkBins chalk@0.5.1
+702 verbose linkMans chalk@0.5.1
+703 verbose rebuildBundles chalk@0.5.1
+704 verbose rebuildBundles [ '.bin',
+704 verbose rebuildBundles   'ansi-styles',
+704 verbose rebuildBundles   'escape-string-regexp',
+704 verbose rebuildBundles   'has-ansi',
+704 verbose rebuildBundles   'strip-ansi',
+704 verbose rebuildBundles   'supports-color' ]
+705 info install chalk@0.5.1
+706 info postinstall chalk@0.5.1
+707 verbose about to build /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat
+708 info build /Users/danielrodrigues/Sites/github/tongue/node_modules/grunt-contrib-concat
+709 verbose linkStuff [ false,
+709 verbose linkStuff   false,
+709 verbose linkStuff   false,
+709 verbose linkStuff   '/Users/danielrodrigues/Sites/github/tongue/node_modules' ]
+710 info linkStuff grunt-contrib-concat@0.5.0
+711 verbose linkBins grunt-contrib-concat@0.5.0
+712 verbose linkMans grunt-contrib-concat@0.5.0
+713 verbose rebuildBundles grunt-contrib-concat@0.5.0
+714 verbose rebuildBundles [ 'chalk', 'source-map' ]
+715 info install grunt-contrib-concat@0.5.0
+716 info postinstall grunt-contrib-concat@0.5.0
+717 error peerinvalid The package grunt does not satisfy its siblings' peerDependencies requirements!
+717 error peerinvalid Peer grunt-contrib-uglify@0.5.0 wants grunt@^0.4.0
+717 error peerinvalid Peer grunt-contrib-sass@0.7.3 wants grunt@~0.4.0
+717 error peerinvalid Peer grunt-contrib-concat@0.5.0 wants grunt@~0.4.0
+717 error peerinvalid Peer grunt-contrib-watch@0.6.1 wants grunt@~0.4.0
+717 error peerinvalid Peer grunt-contrib-cssmin@0.10.0 wants grunt@~0.4.1
+717 error peerinvalid Peer grunt-contrib-htmlmin@0.3.0 wants grunt@~0.4.0
+717 error peerinvalid Peer grunt-html-minify@0.3.1 wants grunt@~0.4.1
+718 error System Darwin 13.3.0
+719 error command "node" "/usr/local/bin/npm" "install" "grunt-contrib-concat"
+720 error cwd /Users/danielrodrigues/Sites/github/tongue
+721 error node -v v0.10.31
+722 error npm -v 2.0.0-beta.0
+723 error code EPEERINVALID
+724 verbose exit [ 1, true ]

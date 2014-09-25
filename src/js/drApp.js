@@ -1,15 +1,16 @@
-//APLICAÇÃO PARA gruposm.com.br
+//APLICAÇÃO PARA danielrodrigues.net.br
 /*
- * Copyright: www.gibee.com.br
+ * Copyright: www.danielrodrigues.net.br
  * Author: @dnielrodrigues
  */
 
 var drApp = {
 
-    //mostrar opcoes de deck
+    //mostrar opcoes do deck
     showHydeDeckOptions : function(){
 
-        var args = {
+        //Usa o módulo DR Hexagram para esconder e ocultar as opcoes de deck
+        drHexagramModule.init({
 
             //parametros para o módulo
             aList : document.getElementsByClassName("b-show-options"),
@@ -33,11 +34,13 @@ var drApp = {
                     };
                 };
             }
-        }
+        });
 
-        //Usa o módulo DR Hexagram para esconder e ocultar as opcoes de deck
-        drHexagramModule.init(args);
+    },
 
+    //inicializa módulo dos decks
+    initDecks : function(){
+        decksModule.init();
     },
 
 };
